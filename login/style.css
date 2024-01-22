@@ -1,0 +1,20 @@
+.container{
+    flex-direction: column;
+}
+.card-logo{
+    display: flex;
+    flex-direction: column;
+    background-color: #050A24;
+    color: white;
+    max-width: 400px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-logo img{
+    margin: -39px;
+}
+.card-login{
+    
+}
