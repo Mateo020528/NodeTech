@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+label{
+    font-weight: bold;
+}
+.container-fluid{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+}
+.card-logo{
+    display: flex;
+    flex-direction: column;
+    background-color: #050A24;
+    color: white;
+    width: 70vw;
+    height: 720px;
+    width: 542px;
+    justify-content: center;
+    align-items: center;
+}
+.p-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: Rowdies;
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 720px;
+    width: 400px;
+    padding: 20px,auto;
+    margin-left: 100px;
+    background-color: #ffff;
+}
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rowdies-regular {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.terminos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
