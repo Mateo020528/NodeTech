@@ -60,3 +60,7 @@ h5{
     justify-content: center;
     align-items: center;
 }
+.terminosCondiciones{
+    display: flex;
+    gap: 10px;
+}
