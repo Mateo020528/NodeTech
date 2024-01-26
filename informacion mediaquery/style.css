@@ -1,0 +1,27 @@
+.title{
+    color: #0629DD;
+    margin-top: 35px;
+}
+
+.title h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.contenido{
+    width: 70dvw;
+    margin-top: 20px;
+}
+footer{
+    
+    background-color: #050a24;
+    color:#ffff;
+}
+.acerca{
+    margin: 20px;
+}
+.informacion{
+    margin: 20px;
+}
+.suscripcion{
+    margin-top: 50px;
+}
