@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Node Tech - Cuenta</title>
+</head>
+
+<body>
+    <div class="padre d-flex">
+        <div class="row justify-content-around">
+            <nav class="botones d-flex">
+                <div class="main d-flex justify-content-center align-items-center">
+                    <img src="../assets/Logo pagina home.png" alt="" srcset="" width="150px">
+                    <button class="btn btn-secondary">HTML</button>
+                    <button class="btn btn-secondary">CSS</button>
+                    <button class="btn btn-secondary">JavaScript</button>
+                    <div class="formulario d-flex">
+                        <form class="search d-flex">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row justify-content-around head-right">
+            <nav class="botones justify-content-around">
+                <button class="btn btn-success">Nuevo Artículo</button>
+            </nav>
+        </div>
+    </div>
+    <hr>
+    <div class="container d-flex">
+        <div class="Izquierda">
+            <h1>Tu Cuenta</h1>
+            <img src="../assets/imagen.avif" alt="" width="250px">
+            <h2>Nombre</h2>
+            <p>Camila</p>
+            <h2>Apellido</h2>
+            <p>Zuluaga Zuñiga</p>
+            <h2>Estudios Academicos Avanzados</h2>
+            <ol>
+                <li>Ingeniero Biomedico</li>
+                <li>Especialización en equipos Biomedicos</li>
+                <li>Doctorado en residuos biomedicos prehospitalarios</li>
+            </ol>
+            <h2>Edad</h2>
+            <p>43 años de edad</p>
+            <h2>Descripción</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a vitae tenetur laborum iste dolores
+                architecto iure perspiciatis temporibus sequi. Neque, quam dolores ducimus nobis possimus fugit animi
+                voluptate! Ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam delectus
+                voluptates error voluptatibus, quos dolorum qui, sed soluta ipsam repudiandae et omnis ratione rerum
+                pariatur quo eum, voluptate placeat.</p>
+            <button class="btn btn-secondary">Editar</button>
+            <button class="btn btn-secondary">Eliminar</button>
+        </div>
+        <div class="Derecha">
+            <h2>Artículos Recomendados</h2>
+            <div class="parrafo1">
+                <img src="../assets/Bucles.jpg" alt="" width="400px">
+                <div class="texto1">
+                    <h3>Bucles o Ciclos en Javascript</h3>
+                    <p>En JavaScript los bucles (loops) son utilizados para realizar tareas repetitivas con base en una
+                        condición. Las condiciones típicamente devuelven true (verdadero) o false(falso) al ser
+                        evaluados. El bucle continuará ejecutándose hasta que la condición devuelva false.</p>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-warning">Eliminar</button>
+                </div>
+            </div>
+            <div class="parrafo2">
+                <img src="../assets/Condicionales.png" alt="" width="400px" height="400px">
+                <div class="texto2">
+                    <h3>Condicionales en Javascript</h3>
+                    <p>El condicional if…else se usa para ejecutar un bloque de código si la condición es verdadera u
+                        otro bloque de código si la condición es falsa.</p>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-warning">Eliminar</button>
+                </div>
+            </div>
+            <a href="#"><small>Ver más ...</small></a>
+        </div>
+    </div>
+    <footer class="footer d-flex justify-content-center">
+        <div class="footer-content d-flex justify-content-center align-items-center">
+            <div class="logo_img">
+                <img src="../assets/logo.png" alt="" width="130px">
+            </div>
+            <div class="ubicacion d-flex flex-column">
+                <p><b>Ubicación</b></p>
+                <p>Telefono:(+1)456-4933</p>
+                <p>Correo: mail@example.com</p>
+            </div>
+            <div class="acerca d-flex  flex-column">
+                <p class="mision"><b>Misión</b></p>
+                <p class="mision">Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el
+                    aprendizaje interactivo es una buena manera de aprender. </p>
+                <p class="vision"><b>Visión</b></p>
+                <p class="vision">Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento
+                    mediante Articulos interactivos.</p>
+            </div>
+            <div class="informacion d-flex flex-column">
+                <p><b>Información</b></p>
+                <p>Aviso legal</p>
+                <p>Términos de uso</p>
+                <p>Politica de privacidad</p>
+                <p>Politica de cookies</p>
+            </div>
+            <div class="info ms-5">
+                <div class="suscripcion d-flex flex-column">
+                    <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
+                    <div class="input d-flex">
+                        <input type="email" id="email" class="form-control d-flex" placeholder="Email">
+                        <button class="btn btn-primary">Join</button>
+                    </div>
+                </div>
+                <div class="nosotros d-flex justify-content-center">
+                    <br>
+                    <p></p>email:
+                    mail@example.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="linea d-flex justify-content-center">
+        <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+    <div class="copyrigt d-flex flex-row justify-content-center">
+        <p>© Copyright 2024, All Rights Reserved</p>
+
+    </div>
+</body>
+
+</html>
