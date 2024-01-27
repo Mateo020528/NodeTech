@@ -1,51 +1,11 @@
-.main{
-    gap: 15px;
-    
-}
-nav{
-    gap: 10px;
-}
-.formulario{
-    align-items: center;
-    gap: 12px;
+title{
+    color: #0629DD;
+    margin-top: 35px;
 }
 
-.articles {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 200px;
-}
-
-.articles-img {
-    display: flex;
-    flex-direction: column;
-}
-
-.articles-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    font-size: 25px;
-    width: 35vw;
-}
-
-.articles-text-title {
-    font-weight: bold;
-}
-
-.articles-text-text {
-    text-align: center;
-}
-button{
-    background-color: #050a24;
-}
-footer{
-    background-color: #050a24;
-    color:#ffff;
-    gap: 15px;
-    position: relative;
+.title h2{
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .logo_img{
     margin: -20px;
