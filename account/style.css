@@ -3,10 +3,12 @@
     flex-direction: row;
     align-items: center;
 }
-.nav{
-    gap: 10px;
+.main{
+    gap: 20px;
 }
 .formulario{
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 12px;
 }
@@ -104,11 +106,9 @@ footer p {
     align-items: center;
 }
 .ubicacion{
-    /* margin-top: 50px; */
     margin-right: 20px;
     }
 .informacion{
-    /* margin-top: 50px; */
     margin-left: 25px;
     }
 .footer-content {
