@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <nav class="botones justify-content-around">
+        <img src="../assets/Logo pagina home.png" alt="logo pagina home" width="200x">
+        <button class="btn btn-secondary">HTML</button>
+        <button class="btn btn-secondary">CSS</button>
+        <button class="btn btn-secondary">JavaScript</button><!--Collcar los botones al lo-->
+    </nav>
+    <header>
+        <div class="title d-flex flex-column align-items-center">
+            <h2 class="title">MEDIA QUERIES</h2> <!--Esta p debo colocarle el color azul-->
+            <img src="../assets/Media-Queries 1.png" alt="Media-Queries" width="700px"> <!--centrar esta imagen-->
+        </div>
+    </header>
+    <main class="d-flex justify-content-center">
+        <div class="contenido">
+            <p>Hola en este articulo encontraras una breve descripción, el para que sirven y el como funciona las media
+                queries o el diseño responsive. luego de leer presentaras un pequeño test para afianzar tus
+                conocimientos y tambien encontraras informacion interactiva...</p>
+
+            <h3 class="title d-flex flex-column align-items-center">El uso de los media queries:</h3>
+            <!--Este titulo debo ponerlo azul tambien-->
+            <p>Para empezar con los mediaQueries queries tenemos que saber primero que es:
+
+                Una media query es una función de CSS3 que permite especificar la visualización de un documento para
+                diferentes medios de salida y tamaños de pantalla.
+                La visualización se ajusta en función de determinadas condiciones como el tipo de medio, la orientación
+                de la pantalla o su resolución.
+                Desde junio del 2012, las media queries se han convertido en un estándar de diseño responsive
+                recomendado por el World Wide Web Consortium.</p>
+
+            <h3 class="title d-flex flex-column align-items-center">¿Para que sirven la Media query?</h3>
+            <!--este titulo tambien debe estar en azul-->
+            <p>
+                Una parte esencial del diseño responsivo es crear una experiencia de uso adecuada para cada dispositivo.
+                Así pues, las media queries se encargan de que la respuesta enviada a un navegador cliente contenga el
+                tipo de visualización correcta según la página web, basándose en las propiedades inherentes al
+                dispositivo en el que se ejecuta.
+                De este modo, antes de que una página web sea cargada y mostrada a los y las navegantes por un
+                navegador, la información relacionada con los medios se recupera a través de las media queries.
+                Una gran ventaja del media query CSS es que no es necesario especificar las resoluciones y tamaños de
+                pantalla adecuados para cada dispositivo, pues permite ajustar las páginas web a más de un tipo de
+                dispositivo de salida y, en consecuencia, es un elemento clave de la optimización móvil y del diseño web
+                responsive.</p>
+            <h3 class="title d-flex flex-column align-items-center">¿Como funcionan las media queries?</h3>
+            <p>
+                Las media queries CSS están conformadas por un tipo de medio (opcional) y una o más expresiones
+                conocidas como características de medios. Asimismo, se pueden combinar múltiples media queries mediante
+                operadores lógicos.
+                En este sentido, las media queries se especifican mediante: "@media" y asignando un bloque CSS a una
+                página únicamente si se cumplen las condiciones que se muestran a continuación.
+                Así pues, el tipo de medio (media type) podría ser: un smartphone, una tableta, una impresora o un TV; y
+                las características de los medios pueden determinarse como la orientación de la pantalla, la resolución,
+                la altura, la anchura o los colores. Como resultado, se pueden utilizar para consultar los elementos de
+                medio y sus características y para establecer breakpoints.
+                Consulta de tipos de medios mediante media query
+                El CSS para un determinado dispositivo de salida puede definirse en función de los tipos de medios
+                (media types), sin embargo, esta consulta puede ser opcional. Si no se define ningún tipo de medio en el
+                media query, se aplica automáticamente el valor por defecto "all".
+                Los valores más comunes utilizados en los tipos de medios son "screen" para pantallas de desktops,
+                tabletas y smartphones; "print" para controlar la salida de impresión de un sitio web y "speech" para la
+                salida en un lector de pantalla que lee el contenido en voz alta.</p>
+            <h3 class="title d-flex flex-column align-items-center">Aqui tienes un ejemplo de el funcionamiento
+                en código.</h3>
+            <p>En este primer ejemplo, queremos que el color de fondo cambie a azul cuando el ancho del dispositivo sea
+                de 600 px o menos.
+                En el CSS, queremos agregar un (ancho máximo: 600 px) para la consulta de medios que le dice a la
+                computadora que se dirija a dispositivos con un ancho de pantalla de 600 px o menos.
+                Dentro de la consulta de medios, cambiamos los estilos de fondo para el body a background-color:
+                #87ceeb;.
+                Aquí está la consulta de medios completa:</p>
+            <div class="ejemplo d-flex flex-column align-items-center">
+                <h4 class="title d-flex flex-column align-items-center">@media (max-width: 600px)
+                    { body { background-color: #87ceeb; } }</h4>
+                </div>
+                
+            </div>
+        </main>
+        <footer class="footer d-flex justify-content-center">
+            <div class="footer-content d-flex justify-content-center align-items-center">
+                <div class="logo_img">
+                    <img src="../assets/Logo footer.png" alt="" width="130px">
+                </div>
+                <div class="ubicacion d-flex flex-column">
+                    <p><b>Ubicación</b></p>
+                    <p>Telefono:(+1)456-4933</p>
+                    <p>Correo: mail@example.com</p>
+                </div>
+                <div class="acerca d-flex  flex-column">
+                    <p class="mision"><b>Misión</b></p>
+                    <p class="mision">Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el aprendizaje interactivo es una buena manera de aprender. </p>
+                    <p class="vision"><b>Visión</b></p>
+                    <p class="vision">Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
+                </div>
+                <div class="informacion d-flex flex-column">
+                    <p><b>Información</b></p>
+                    <p>Aviso legal</p>
+                    <p>Términos de uso</p>
+                    <p>Politica de privacidad</p>
+                    <p>Politica de cookies</p>
+                </div>
+                <div class="info ms-5">
+                    <div class="suscripcion d-flex flex-column">
+                        <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
+                        <div class="input d-flex">
+                            <input type="email"  id="email" class="form-control d-flex"placeholder="Email">
+                            <button class="btn btn-primary">Join</button>
+                        </div>
+                    </div>
+                    <div class="nosotros d-flex justify-content-center">
+                        <br> 
+                        <p></p>email:
+                        mail@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="linea d-flex justify-content-center">
+            <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        </div>
+        <div class="copyrigt d-flex flex-row justify-content-center">
+            <p>© Copyright 2024, All Rights Reserved</p>
+            
+        </div>
+</body>
+
+</html>

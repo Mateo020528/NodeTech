@@ -1,0 +1,1 @@
+const correo = sessionStorage.getItem("correo");
