@@ -7,8 +7,9 @@ iniciar.addEventListener("click", verificar)
 
 function verificar(){
     fetch (url).then(response =>{return response.json()}).then(data =>{
-        data.forEach(element => {
-            console.log(element)
+        console.log(data);
+        let userFind = data.find(element => element.email === correo.value && element.password === password.value);
+        
             
             if(correo.value != "" && password.value != "" ){
                 if(correo.value === element.email && password.value === element.password) {
@@ -21,7 +22,7 @@ function verificar(){
             } else {
                 alert("por favor ingrese todos los campos requeridos")
             }
-           
+        
         });
-    })
-}
+    }
+
