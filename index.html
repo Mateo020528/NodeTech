@@ -5,121 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node Tech</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
+    <!-- javascript -->
     <script src="app.js" defer></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
-    <nav class="botones d-flex justify-content-between align-items-center">
-        <div class="main d-flex align-items-center ">
-            <img src="./assets/Logo pagina home.png" alt="logo pagina home" width="200x">
-            <button class="btn btn-secondary">HTML</button>
-            <button class="btn btn-secondary">CSS</button>
-            <button class="btn btn-secondary">JavaScript</button>
-            
-        </div>
-        <div class="formulario d-flex">
-            <form class="search d-flex">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-                <a class="cuenta" href="account/index.html"><div class="btn btn-secondary">Cuenta</div></a>
-                <a class="login" href="./login/index.html"><div class="btn btn-primary">Login now</div></a>
-            </div>
-    </nav>
+    <div class="padre d-flex">
+        <div class="row justify-content-around header">
+            <nav class="botones d-flex">
+                <div class="main d-flex justify-content-center align-items-center">
+                    <img src="../assets/logo.png" alt="" srcset="" width="150px">
+                    <button class="btn btn-secondary">HTML</button>
+                    <button class="btn btn-secondary">CSS</button>
+                    <button class="btn btn-secondary">JavaScript</button>
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-success">Artículo</button>                    
+                </div>
+            </nav>
+        </div>        
     </div>
-    <main class="landin_page">
-        <div class="articles" id="firts">
-            <div class="articles-img">
-                <a href="media-query/index.html"><img src="./assets/first.png" class="firts-img"></a>
+    <div class="container articles" id="firts">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="articles" id="firts">
+                <div class="articles-img">
+                    <a href="media-query/index.html"><img src="./assets/first.png" class="firts-img"></a>
+                </div>
+                <div class="articles-text">
+                    <h1 class="articles-text-title">Aprende sobre media queries.</h1>
+                    <p class="articles-text-text">
+                        El diseño responsivo tiene como objetivo adaptar la visualización de una
+                        página web a cada dispositivo de la mejor manera posible. Las Media Queries se utilizan para obtener
+                        las características técnicas del dispositivo que solicita la visualización de la página web.
+                    </p>
+                </div>
+                    <div class="articles-img">
+                        <img src="./assets/second.png" class="firts-img">
+                    </div>
+                    
+                    <div class="articles-text">
+                        <h1 class="articles-text-title">Aprende sobre display grid.</h1>
+                        
+                        <h5 class="articles-text-text">El internet móvil presenta un gran número de desafíos para los
+                            diseñadores de páginas web: debido a la enorme variedad de diseños de los dispositivos móviles, es
+                            imposible saber qué formato tiene la pantalla en la que se visualizará el contenido web. </h5>
+                        </div>
+                        
+                    </div>
+                    <div class="articles" id="firts">
+                        <div class="articles-img">
+                            <img src="./assets/third.png" class="firts-img">
+                        </div>
+                        
+                        <div class="articles-text">
+                            <h1 class="articles-text-title">Aprende sobre apis</h1>
+                            
+                            <h5 class="articles-text-text">
+                                El término API significa Application Programming Interface y se basa en un conjunto de definiciones
+                                y protocolos que tienen el propósito de integrar sistemas y facilitar la comunicación entre
+                                aplicaciones de software según una serie de reglas.</h5>
+                            </div>
+                            
+                        </div>
             </div>
-
-            <div class="articles-text">
-                <h1 class="articles-text-title">Aprende sobre media queries.</h1>
-
-                <h5 class="articles-text-text">El diseño responsivo tiene como objetivo adaptar la visualización de una
-                    página web a cada dispositivo de la mejor manera posible. Las Media Queries se utilizan para obtener
-                    las características técnicas del dispositivo que solicita la visualización de la página web.</h5>
-            </div>
-
         </div>
-        <div class="articles" id="firts">
-            <div class="articles-img">
-                <img src="./assets/second.png" class="firts-img">
             </div>
-
-            <div class="articles-text">
-                <h1 class="articles-text-title">Aprende sobre display grid.</h1>
-
-                <h5 class="articles-text-text">El internet móvil presenta un gran número de desafíos para los
-                    diseñadores de páginas web: debido a la enorme variedad de diseños de los dispositivos móviles, es
-                    imposible saber qué formato tiene la pantalla en la que se visualizará el contenido web. </h5>
-            </div>
-
-        </div>
-        <div class="articles" id="firts">
-            <div class="articles-img">
-                <img src="./assets/third.png" class="firts-img">
-            </div>
-
-            <div class="articles-text">
-                <h1 class="articles-text-title">Aprende sobre apis</h1>
-
-                <h5 class="articles-text-text">
-                    El término API significa Application Programming Interface y se basa en un conjunto de definiciones
-                    y protocolos que tienen el propósito de integrar sistemas y facilitar la comunicación entre
-                    aplicaciones de software según una serie de reglas.</h5>
-            </div>
-            
-        </div>
-        <footer class="footer d-flex justify-content-center">
-            <div class="footer-content d-flex justify-content-center align-items-center">
-                <div class="logo_img">
-                    <img src="./assets/Logo footer.png" alt="" width="130px">
-                </div>
-                <div class="ubicacion d-flex flex-column">
-                    <p><b>Ubicación</b></p>
-                    <p>Telefono:(+1)456-4933</p>
-                    <p>Correo: mail@example.com</p>
-                </div>
-                <div class="acerca d-flex  flex-column">
-                    <p class="mision"><b>Misión</b></p>
-                    <p class="mision">Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el aprendizaje interactivo es una buena manera de aprender. </p>
-                    <p class="vision"><b>Visión</b></p>
-                    <p class="vision">Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
-                </div>
-                <div class="informacion d-flex flex-column">
-                    <p><b>Información</b></p>
-                    <p>Aviso legal</p>
-                    <p>Términos de uso</p>
-                    <p>Politica de privacidad</p>
-                    <p>Politica de cookies</p>
-                </div>
-                <div class="info ms-5">
-                    <div class="suscripcion d-flex flex-column">
-                        <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
-                        <div class="input d-flex">
-                            <input type="email"  id="email" class="form-control d-flex"placeholder="Email">
-                            <button class="btn btn-primary">Join</button>
+                <footer class="footer d-flex justify-content-center">
+                    <div class="footer-content d-flex justify-content-center align-items-center">
+                        <div class="logo_img">
+                            <img src="./assets/Logo footer.png" alt="" width="130px">
+                        </div>
+                        <div class="ubicacion d-flex flex-column">
+                            <p><b>Ubicación</b></p>
+                            <p>Telefono:(+1)456-4933</p>
+                            <p>Correo: mail@example.com</p>
+                        </div>
+                        <div class="acerca d-flex  flex-column">
+                            <p class="mision"><b>Misión</b></p>
+                            <p class="mision">Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el aprendizaje interactivo es una buena manera de aprender. </p>
+                            <p class="vision"><b>Visión</b></p>
+                            <p class="vision">Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
+                        </div>
+                        <div class="informacion d-flex flex-column">
+                            <p><b>Información</b></p>
+                            <p>Aviso legal</p>
+                            <p>Términos de uso</p>
+                            <p>Politica de privacidad</p>
+                            <p>Politica de cookies</p>
+                        </div>
+                        <div class="info ms-5">
+                            <div class="suscripcion d-flex flex-column">
+                                <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
+                                <div class="input d-flex">
+                                    <input type="email"  id="email" class="form-control d-flex"placeholder="Email">
+                                    <button class="btn btn-primary">Join</button>
+                                </div>
+                            </div>
+                            <div class="nosotros d-flex justify-content-center">
+                                <br> 
+                                <p></p>email:
+                                mail@example.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="nosotros d-flex justify-content-center">
-                        <br> 
-                        <p></p>email:
-                        mail@example.com</p>
-                    </div>
+                </footer>
+                <div class="linea d-flex justify-content-center">
+                    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                 </div>
-            </div>
-        </footer>
-        <div class="linea d-flex justify-content-center">
-            <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-        </div>
-        <div class="copyrigt d-flex flex-row justify-content-center">
-            <p>© Copyright 2024, All Rights Reserved</p>
+                <div class="copyrigt d-flex flex-row justify-content-center">
+                    <p>© Copyright 2024, All Rights Reserved</p>
+                    
+                </div>
+            </body>
             
-        </div>
-    </body>
-
-</html>
+            </html>

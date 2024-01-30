@@ -3,7 +3,11 @@
     
 }
 nav{
-    gap: 10px;
+    margin-left: 720px;
+    margin-right: 200px;
+}
+.header{
+    background-color: #050a24;
 }
 .formulario{
     align-items: center;
