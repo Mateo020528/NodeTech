@@ -1,28 +1,34 @@
-.padre{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden
+nav{
+    justify-content: center;
 }
+
+.padre {
+    justify-content: center;
+}
+
+.nav-bar-content{
+    width: 98vw !important;
+}
+
+.search {
+    width: 25%;
+}
+
 .main{
     display: flex;
-    width: 1300px;
+    width: 1200px;
     gap: 20px;
 }
 
 .row{
     background-color: #050a24;
 }
+
 .formulario{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
-}
-
-.head-right{
-    text-align: end;
-    padding-right: 600px;
 }
 
 .Izquierda{
@@ -58,23 +64,22 @@
     text-align: center;
 }
 
+/* .sesion{
+    right: 320px;
+    position: absolute;
+} */
+
 small{
     justify-content: center;
 }
 
 button{
-    border-radius: 20px;
-    color: blue;
+    color: blue;    
 }
 
 a{
     display: flex;
     justify-content: center;
-}
-
-nav{
-    margin-left: 720px;
-    margin-right: 200px;
 }
 
 hr{
@@ -101,7 +106,6 @@ footer{
     gap: 15px;
     position: relative;
 }
-
 footer p {
     max-width: 400px;
 }

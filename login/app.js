@@ -9,20 +9,19 @@ function verificar(){
     fetch (url).then(response =>{return response.json()}).then(data =>{
         console.log(data);
         let userFind = data.find(element => element.email === correo.value && element.password === password.value);
-        
+        console.log(userFind)
             
             if(correo.value != "" && password.value != "" ){
-                if(correo.value === element.email && password.value === element.password) {
-                    alert("el usuario ha ingresado el correo ")
+                if(userFind){
                     window.location.href = "../account/index.html";
-                    sessionStorage.setItem("correo",correo.value)
+                    sessionStorage.getItem(correo,element.email)
                 } else {
-                    alert("Revisa bien tus datos, hay algo que ingresaste mal")
+                    alert("Revisa bien tus datos, hay algo que ingresaste mal");
                 }
             } else {
-                alert("por favor ingrese todos los campos requeridos")
+                alert("por favor ingrese todos los campos requeridos");
             }
-        
         });
     }
 
+//por el momento funciona con 2 usuarios en la base de datos.

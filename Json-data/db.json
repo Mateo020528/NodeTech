@@ -3,20 +3,22 @@
     {
       "name": "Daniela",
       "last_name": "Gonzales",
+      "gender" : "femenino",
+      "edad" : "",
+      "estudios" : "",
       "email": "daniela@gmail.com",
       "password": "123456",
-      "gender": "femenino",
-      "id": "0bb6",
-      "user_name": ""
+      "username": ""
     },
     {
-      "name":"angie",
-      "last_name" : "herrera",
+      "name":"Angie",
+      "last_name" : "Herrera",
+      "gender" : "femenino",
+      "edad" : "",
+      "estudios" : "",
       "email" : "angie@gmail.com",
       "password" : "123456",
-      "gender" : "femenino",
-      "id" : "0bb5",
-      "user_name" : ""
+      "username" : ""
     }
   ],
   "articles": [
@@ -29,7 +31,7 @@
       "date_publication": ""
     }
   ],
-    "articles_desc": [
+  "articles_desc": [
       {
         "name_article": "banano",
         "description": "15.000",
@@ -38,11 +40,5 @@
         "author_id": "00d8",
         "date_publication": ""
       }
-  ],
-    "Auhor": [
-      {
-        "name" : "juanky",
-        "last_name" : "chamat"
-      }
-    ]
+  ]    
 }

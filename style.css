@@ -1,24 +1,34 @@
-.main{
-    gap: 15px;
-    
-}
+/* HEADER */
 nav{
-    margin-left: 720px;
-    margin-right: 200px;
+    justify-content: center;
 }
+
+.padre {
+    justify-content: center;
+}
+
+.nav-bar-content{
+    width: 98vw !important;
+}
+
+.search {
+    width: 25%;
+}
+
+.main{
+    display: flex;
+    gap: 20px;
+}
+
 .header{
     background-color: #050a24;
-}
-.formulario{
-    align-items: center;
-    gap: 12px;
 }
 
 .articles {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 200px;
+    margin: 50px;
 }
 
 .articles-img {
@@ -33,6 +43,7 @@ nav{
     gap: 50px;
     font-size: 25px;
     width: 35vw;
+    margin: 15px;
 }
 
 .articles-text-title {
@@ -42,25 +53,19 @@ nav{
 .articles-text-text {
     text-align: center;
 }
+
 button{
     background-color: #050a24;
 }
+
 footer{
     background-color: #050a24;
     color:#ffff;
     gap: 15px;
     position: relative;
 }
-.logo_img{
-    margin: -20px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-}
-.contenido{
-    width: 70dvw;
-    margin-top: 20px;
-}
+
+
 footer{
     background-color: #050a24;
     color:#ffff;
@@ -70,6 +75,17 @@ footer{
 
 footer p {
     max-width: 400px;
+}
+.logo_img{
+    margin: -20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.contenido{
+    width: 70dvw;
+    margin-top: 20px;
 }
 .acerca{
     margin-top:30px;
@@ -82,11 +98,11 @@ footer p {
 .ubicacion{
     /* margin-top: 50px; */
     margin-right: 20px;
-    }
+}
 .informacion{
     /* margin-top: 50px; */
     margin-left: 25px;
-    }
+}
 .footer-content {
     width: 90dvw;
 }
