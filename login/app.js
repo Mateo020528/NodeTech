@@ -9,10 +9,12 @@ function verificar(){
     fetch (url).then(response =>{return response.json()}).then(data =>{
         console.log(data);
         let userFind = data.find(element => element.email === correo.value && element.password === password.value);
+        //Esta variable la uso para guardar los valores qure ingrese el usuario 
         console.log(userFind)
             
             if(correo.value != "" && password.value != "" ){
                 if(userFind){
+                    //y si existe el usuario me permita etrar a la pagina de la cuenta
                     window.location.href = "../account/index.html";
                     sessionStorage.getItem(correo,element.email)
                 } else {
