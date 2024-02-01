@@ -8,6 +8,7 @@
       "estudios": "",
       "email": "daniela@gmail.com",
       "password": "123456",
+      "confirmar": "",
       "username": "",
       "id": "edb7"
     },
@@ -19,8 +20,19 @@
       "estudios": "",
       "email": "angie@gmail.com",
       "password": "123456",
+      "confirmar": "",
       "username": "",
       "id": "28b8"
+    },
+    {
+      "id": "ad18",
+      "name": "mateo",
+      "last_name": "velez",
+      "edad": "22",
+      "genero": "Masculino",
+      "estudios": "Tecnológico",
+      "email": "mateo2343@gmail.com",
+      "confirmar": "123456"
     }
   ],
   "articles": [
