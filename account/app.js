@@ -1,4 +1,4 @@
-const correo = sessionStorage.getItem("correo");
+const correo = sessionStorage.getItem("nombre");
 const cerrar = document.getElementById("cerrar");
 
 

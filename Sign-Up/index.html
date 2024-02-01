@@ -27,31 +27,33 @@
             <label for="">Edad:</label>
             <input type="number" class="form-control"  id="edad">
             <label for=""></label>Genero:</label>
-            <select name="Genero" class="form-control" id="Genero">
-                <option value="01">Masculino</option>
-                <option value="02">Femenino</option>
-                <option value="03">39 Tipos de gay</option>
+            <select name="Genero" class="form-control" id="genero">
+                <option value="default" disabled selected>Ingrese genero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
             </select>
             <label for="">Estudios:</label>
             <select name="estudios" class="form-control" id="estudios">
-                <option value="01">Bachiller</option>
-                <option value="02">Técnico</option>
-                <option value="03">Tecnológico</option>
-                <option value="04">Profesional</option>
-                <option value="05">Maestrías</option>
-                <option value="06">Doctorados</option>
+                <option value="default"disabled selected>Ingrese nivel de estudios</option>
+                <option value="">Bachiller</option>
+                <option value="">Técnico</option>
+                <option value="">Tecnológico</option>
+                <option value="">Profesional</option>
+                <option value="">Maestrías</option>
+                <option value="">Doctorados</option>
             </select>
             <label for="">Email:</label>
-            <input type="text" class="form-control"  id="email" >
+            <input type="text" class="form-control"  id="email" >   
             <label for="">Contraseña:</label>
-            <input type="password" class="form-control"  id="contraseña">
+            <input type="password" class="form-control"  id="password">
             <label for="">Confirmar Contraseña</label>
-            <input type="password" class="form-control" id="confirmarContaseña">
+            <input type="password" class="form-control" id="confirmar-password">
             <div class="terminosCondiciones mt-3">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <p class="terminos">Acepto terminos y condiciones</p>
             </div>
-            <button class="btn btn-primary" id="registro">Register now</button>
+            <div class="btn btn-primary" id="registro">Register now</div>
 
     </main>
 </body>

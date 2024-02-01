@@ -16,7 +16,7 @@ function verificar(){
                 if(userFind){
                     //y si existe el usuario me permita etrar a la pagina de la cuenta
                     window.location.href = "../account/index.html";
-                    sessionStorage.getItem(correo,element.email)
+                    sessionStorage.setItem("nombre",element.email)
                 } else {
                     alert("Revisa bien tus datos, hay algo que ingresaste mal");
                 }
