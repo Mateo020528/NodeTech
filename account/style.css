@@ -1,14 +1,19 @@
+/* HEADER */
 nav{
-    justify-content: center;
-}
-
-.padre {
     justify-content: center;
 }
 
 .flags img{
     cursor: pointer;
     width: 50px;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0rem;
+}
+
+.padre {
+    justify-content: center;
 }
 
 .nav-bar-content{
@@ -21,8 +26,16 @@ nav{
 
 .main{
     display: flex;
-    width: 1200px;
     gap: 20px;
+}
+
+.container-fluid{
+    background-color: #050a24;
+    color: #fff;
+}
+
+.header{
+    background-color: #050a24;
 }
 
 .row{
