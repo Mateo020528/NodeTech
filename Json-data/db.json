@@ -29,10 +29,40 @@
       "name": "mateo",
       "last_name": "velez",
       "edad": "22",
-      "genero": "Masculino",
+      "gender": "Masculino",
       "estudios": "Tecnológico",
       "email": "mateo2343@gmail.com",
-      "confirmar": "123456"
+      "password": "123456"
+    },
+    {
+      "id": "0e22",
+      "name": "maicol",
+      "last_name": "agudelo",
+      "edad": "24",
+      "genero": "Masculino",
+      "estudios": "Tecnológico",
+      "email": "maicol02@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "030f",
+      "name": "gerardo",
+      "last_name": "las vacunas",
+      "edad": "21",
+      "genero": "Masculino",
+      "estudios": "Bachiller",
+      "email": "gerardo@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "6a31",
+      "name": "asdasd",
+      "last_name": "asdad",
+      "edad": "12",
+      "genero": "Masculino",
+      "estudios": "Técnico",
+      "email": "aadd@gmail.com",
+      "confirmar": "hola1234"
     }
   ],
   "articles": [

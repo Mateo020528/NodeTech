@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- javascript -->
     <script src="app.js" defer></script>
+    <script src="assets/traduccion.js" defer></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
 </head>
@@ -23,12 +24,19 @@
                 <div class="main d-flex justify-content-center align-items-center nav-bar-content">
                     <img src="assets/logo.png" width="130px">
                     <button class="btn btn-secondary">HTML</button>
-                    <button class="btn btn-secondary">CSS</button>
-                    <button class="btn btn-secondary">JavaScript</button>
+                    <a href="media-query/index.html"><button class="btn btn-secondary">CSS</button></a>
+                    <a href="apis/index.html"><button class="btn btn-secondary">JavaScript</button></a>
                     <input class="form-control search" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     <button class="btn btn-success">Artículo</button>
                     <a href="account/index.html"><button class="btn btn-success">Cuenta</button></a>
+                    <div class="flags" id="colombia" onclick="traducirEs()">
+                        <img src="assets/colombia.svg">
+                    </div>
+
+                    <div class="flags" id="estados-unidos" onclick="traducirEn()">
+                        <img src="assets/estados-unidos.svg">
+                    </div>
                     <a href="login/index.html"><button class="btn btn-success sesion">Log in</button></a>
                 </div>
             </nav>
@@ -69,7 +77,7 @@
                 <div class="three-article">
                     <div class="articles" id="firts">
                         <div class="articles-img">
-                            <img src="./assets/third.png" width="600px">
+                            <a href="apis/index.html"><img src="./assets/third.png" width="600px"></a>
                         </div>
                         <div class="articles-text">
                             <h1 class="articles-text-title">APIS EN EL DISEÑO WEB</h1>
@@ -98,11 +106,21 @@
                 <p class="vision"><b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
             </div>
             <div class="informacion d-flex flex-column">
-                <p><b>Información</b></p>
-                <p>Aviso legal</p>
-                <p>Términos de uso</p>
-                <p>Política de privacidad</p>
-                <p>Política de cookies</p>
+                <a href="politicas/index.html">
+                    <p><b>Información</b></p>
+                </a>
+                <a href="politicas/index.html">
+                    <p>Aviso legal</p>
+                </a>
+                <a href="politicas/index.html">
+                    <p>Términos de uso</p>
+                </a>
+                <a href="politicas/index.html">
+                    <p>Política de privacidad</p>
+                </a>
+                <a href="politicas/index.html">
+                    <p>Política de cookies</p>
+                </a>
             </div>
             <div class="info ms-5">
                 <div class="suscripcion d-flex flex-column">

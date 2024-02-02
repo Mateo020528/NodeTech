@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- javascript -->
     <script src="app.js" defer></script>
+    <script src="../assets/traduccion.js" defer></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
 </head>
@@ -27,12 +28,19 @@
                 <div class="main d-flex justify-content-center align-items-center nav-bar-content">
                     <a href="../index.html"><img src="../assets/logo.png" width="150px"></a>
                     <button class="btn btn-secondary">HTML</button>
-                    <button class="btn btn-secondary">CSS</button>
-                    <button class="btn btn-secondary">JavaScript</button>
+                    <a href="../media-query/index.html"><button class="btn btn-secondary">CSS</button></a>
+                    <a href="../apis/index.html"><button class="btn btn-secondary">JavaScript</button></a>
                     <input class="form-control search" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                    <button class="btn btn-success">Artículo</button>                    
-                    <button onclick="cerrarSesion()" class="btn btn-warning sesion">Cerrar Sesion</button>
+                    <a href="../crear-articulo/index.html"><button class="btn btn-success">Artículo</button> </a>
+                    <div class="flags" id="colombia" onclick="traducirEs()">
+                        <img src="../assets/colombia.svg">
+                    </div>
+
+                    <div class="flags" id="estados-unidos" onclick="traducirEn()">
+                        <img src="../assets/estados-unidos.svg">
+                    </div>                   
+                    <button onclick="cerrarSesion()" class="btn btn-warning sesion" id="cerrar">Cerrar Sesion</button>
                 </div>
             </nav>
         </div>        
@@ -55,13 +63,7 @@
             <h2>Edad</h2>
             <p>43 años de edad</p>
             <h2>Descripción</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a vitae tenetur laborum iste dolores
-                architecto iure perspiciatis temporibus sequi. Neque, quam dolores ducimus nobis possimus fugit animi
-                voluptate! Ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magnam delectus
-                voluptates error voluptatibus, quos dolorum qui, sed soluta ipsam repudiandae et omnis ratione rerum
-                pariatur quo eum, voluptate placeat.
-            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam fuga nulla aliquid vero. Alias nulla nihil explicabo nemo, unde deserunt id nisi ullam laboriosam consequuntur illo rerum dolores? Vero, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi similique debitis non saepe recusandae odio, ipsa provident, aperiam beatae magni earum rerum omnis vel exercitationem eum reprehenderit laudantium veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae eligendi praesentium ad enim aperiam nam eos nisi, odit facere nobis delectus necessitatibus amet, id minus. Fuga tempore illum molestiae? Numquam.</p>
             <button class="btn btn-secondary">Editar</button>
             <button class="btn btn-secondary">Eliminar</button>
         </div>
@@ -95,35 +97,44 @@
     <!-- footer -->
     <footer class="footer d-flex justify-content-center">
         <div class="footer-content d-flex justify-content-center align-items-center">            
-            <img src="../assets/logo.png" width="130px">
+            <img src="../assets/Logo footer.png" width="130px">  
             <div class="ubicacion d-flex flex-column">
                 <p><b>Ubicación</b></p>
                 <p>Telefono: (+1)456-4933</p>
                 <p>Correo: mail@example.com</p>
             </div>
-            <div class="acerca d-flex  flex-column">
-                <p class="mision"><b>Misión: </b>Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el aprendizaje interactivo es una buena manera de aprender. </p>
-                <p class="vision"><b>Visión: </b>Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
+            <div class="acerca d-flex flex-column">
+                <p class="mision"><b>Misión:</b> Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el aprendizaje interactivo es una buena manera de aprender.</p>
+                <p class="vision"><b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
             </div>
             <div class="informacion d-flex flex-column">
-                <p><b>Información</b></p>
-                <p>Aviso legal</p>
-                <p>Términos de uso</p>
-                <p>Politica de privacidad</p>
-                <p>Politica de cookies</p>
+                <a href="../politicas/index.html">
+                    <p><b>Información</b></p>
+                </a>
+                <a href="../politicas/index.html">
+                    <p>Aviso legal</p>
+                </a>
+                <a href="../politicas/index.html">
+                    <p>Términos de uso</p>
+                </a>
+                <a href="../politicas/index.html">
+                    <p>Política de privacidad</p>
+                </a>
+                <a href="../politicas/index.html">
+                    <p>Política de cookies</p>
+                </a>
             </div>
             <div class="info ms-5">
                 <div class="suscripcion d-flex flex-column">
                     <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
                     <div class="input d-flex">
-                        <input type="email" id="email" class="form-control d-flex" placeholder="Email">
+                        <input type="email"  id="email" class="form-control d-flex"placeholder="Email">
                         <button class="btn btn-primary">Join</button>
                     </div>
                 </div>
                 <div class="nosotros d-flex justify-content-center">
-                    <br>
-                    <p></p>email:
-                    mail@example.com</p>
+                    <br> 
+                    <p>email: mail@example.com</p>
                 </div>
             </div>
         </div>
@@ -132,7 +143,7 @@
         <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
     </div>
     <div class="copyrigt d-flex flex-row justify-content-center">
-        <p>© Copyright 2024, All Rights Reserved</p>
+        <p>© Copyright 2024, All Rights Reserved</p>        
     </div>
 </body>
 

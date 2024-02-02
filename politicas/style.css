@@ -3,11 +3,6 @@ nav{
     justify-content: center;
 }
 
-.flags img{
-    cursor: pointer;
-    width: 50px;
-}
-
 .padre {
     justify-content: center;
 }
@@ -25,49 +20,10 @@ nav{
     gap: 20px;
 }
 
-.container-fluid{
-    background-color: #050a24;
-    color: #fff;
-
-}
-
 .header{
     background-color: #050a24;
 }
 
-.articles {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
-}
-
-.articles-img {
-    display: flex;
-    flex-direction: column;
-}
-
-.articles-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    font-size: 25px;
-    width: 35vw;
-    margin: 15px;
-}
-
-.articles-text-title {
-    font-weight: bold;
-}
-
-.articles-text-text {
-    text-align: center;
-}
-
-button{
-    background-color: #050a24;
-}
 
 footer{
     background-color: #050a24;
@@ -76,14 +32,6 @@ footer{
     position: relative;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: grey
-}
 
 footer{
     background-color: #050a24;

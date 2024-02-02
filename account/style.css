@@ -6,6 +6,11 @@ nav{
     justify-content: center;
 }
 
+.flags img{
+    cursor: pointer;
+    width: 50px;
+}
+
 .nav-bar-content{
     width: 98vw !important;
 }
@@ -64,6 +69,10 @@ nav{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* .sesion{
     right: 320px;
     position: absolute;
@@ -95,8 +104,13 @@ h2{
     text-decoration: underline;
 }
 
-img{
-    border-radius: 20px;
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: grey
 }
 
 /* Footer */

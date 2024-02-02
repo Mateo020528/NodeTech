@@ -17,6 +17,15 @@ nav{
     justify-content: center;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: grey
+}
+
 .padre {
     justify-content: center;
 }
@@ -64,14 +73,6 @@ footer{
 }
 footer p {
     max-width: 400px;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: grey
 }
 .acerca{
     margin-top:30px;
