@@ -25,6 +25,7 @@ label {
     width: 300px;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .card-logo p {
@@ -45,6 +46,7 @@ label {
     margin: 20px, auto;
     background-color: #ffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .contraseña {

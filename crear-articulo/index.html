@@ -18,7 +18,7 @@
         <div class="row justify-content-center header">
             <nav class="botones d-flex justify-content-center">
                 <div class="main d-flex justify-content-center align-items-center nav-bar-content">
-                    <img src="assets/logo.png" width="130px">
+                    <img src="../assets/logo.png" width="130px">
                     <button class="btn btn-secondary">HTML</button>
                     <button class="btn btn-secondary">CSS</button>
                     <button class="btn btn-secondary">JavaScript</button>
@@ -45,7 +45,7 @@
     </main>
     <footer class="footer d-flex justify-content-center">
         <div class="footer-content d-flex justify-content-center align-items-center">            
-            <img src="./assets/Logo footer.png" width="130px">  
+            <img src="../assets/Logo footer.png" width="130px">  
             <div class="ubicacion d-flex flex-column">
                 <p><b>Ubicación</b></p>
                 <p>Telefono: (+1)456-4933</p>
@@ -96,6 +96,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js">
     </script>
     <script>
+
         ClassicEditor
             .create(document.querySelector('#txtDescripcion'))
             .catch(error => {
@@ -103,6 +104,7 @@
             });
         let root = document.getElementById('root');
         let texto = document.createElement("div");
+
         function ver() {
             let df = document.getElementsByClassName('ck-editor__editable_inline');
             console.log(df[0].innerHTML)

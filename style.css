@@ -8,6 +8,10 @@ nav{
     width: 50px;
 }
 
+.navbar{
+    --bs-navbar-padding-y: 0rem;
+}
+
 .padre {
     justify-content: center;
 }
@@ -28,7 +32,6 @@ nav{
 .container-fluid{
     background-color: #050a24;
     color: #fff;
-
 }
 
 .header{

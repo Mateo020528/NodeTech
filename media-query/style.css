@@ -8,13 +8,18 @@ h1{
     text-align: center;
 }
 
-.container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
+/* HEADER */
 nav{
     justify-content: center;
+}
+
+.flags img{
+    cursor: pointer;
+    width: 50px;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0rem;
 }
 
 .padre {
@@ -34,13 +39,11 @@ nav{
     gap: 20px;
 }
 
-.header{
+.container-fluid{
     background-color: #050a24;
+    color: #fff;
 }
 
-title{    
-    margin-top: 35px;
-}
 
 h2,h3{
     color: #0629DD;

@@ -12,24 +12,39 @@
 </head>
 
 <body>
-    <!-- header -->
-    <div class="padre d-flex">
-        <div class="row justify-content-center header">
-            <nav class="botones d-flex justify-content-center">
-                <div class="main d-flex justify-content-center align-items-center nav-bar-content">
-                    <a href="../index.html"><img src="../assets/logo.png" width="130px"></a>
-                    <button class="btn btn-secondary">HTML</button>
-                    <button class="btn btn-secondary">CSS</button>
-                    <a href="../apis/index.html"><button class="btn btn-secondary">JavaScript</button></a>
-                    <input class="form-control search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    <button class="btn btn-success">Artículo</button>
-                    <a href="../account/index.html"><button class="btn btn-success">Cuenta</button></a>
-                    <a href="../login/index.html"><button class="btn btn-success sesion">Log in</button></a>
-                </div>
-            </nav>
-        </div>        
-    </div>
+    <!-- header boostrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand"><img src="../assets/Logo footer.png" width=110px></a>
+            <button class="navbar-toggler bg-light" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-align-center">
+                        <a class="nav-link active text-light" aria-current="page" href="#">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../media-query/index.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../apis/index.html">JAVASCRIPT</a>
+                    </li>  
+                    <li class="nav-item text-align-center">
+                        <a class="nav-link active text-light" aria-current="page" href="../account/index.html">CUENTA</a>
+                    </li>
+                    <li class="nav-item text-align-center">
+                        <a class="nav-link active text-light" aria-current="page" href="../login/index.html">LOGIN</a>
+                    </li>                  
+                </ul>                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>                    
+                </form>
+            </div>
+        </div>
+    </nav>  
+    <!--  end navBAr -->
     <!-- content -->
     <div class="container d-flex justify-content-center">
         <div class="row">
@@ -51,7 +66,7 @@
     </div>
     <footer class="footer d-flex justify-content-center">
         <div class="footer-content d-flex justify-content-center align-items-center">            
-            <img src="./assets/Logo footer.png" width="130px">  
+            <img src="../assets/Logo footer.png" width="130px">  
             <div class="ubicacion d-flex flex-column">
                 <p><b>Ubicación</b></p>
                 <p>Telefono: (+1)456-4933</p>

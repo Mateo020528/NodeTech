@@ -1,6 +1,16 @@
 /* HEADER */
+/* HEADER */
 nav{
     justify-content: center;
+}
+
+.flags img{
+    cursor: pointer;
+    width: 50px;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0rem;
 }
 
 .padre {
@@ -20,8 +30,9 @@ nav{
     gap: 20px;
 }
 
-.header{
+.container-fluid{
     background-color: #050a24;
+    color: #fff;
 }
 
 
