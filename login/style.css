@@ -1,18 +1,29 @@
-body {
+body { 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;             /*Este body me esta centrando el login en la página*/
     height: 100dvh;
 }
 
 label {
-    font-weight: bold;
+    font-weight: bold;                  /**/
 }
 
 .container-fluid {
     display: flex;
     margin: 0px;
     justify-content: center;
+}
+@media (max-width:665px) {
+    .container-fluid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: none;
+        
+    }
+    
 }
 
 .card-logo {
@@ -25,7 +36,6 @@ label {
     width: 300px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
 
 .card-logo p {
@@ -41,12 +51,25 @@ label {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    max-width: 400px;
+    width: 400px;
     padding: 20px;
     margin: 20px, auto;
     background-color: #ffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+}
+@media (max-width:665px){
+    .card-logo{
+        border-radius: 10px;
+        height: 200px;
+    }
+    .card-logo img{
+        height: 600px;
+        margin-top: 20px;
+    }
+    .card-login{
+        width: 300px;
+        border-radius: 10px;
+    }
 }
 
 .contraseña {
@@ -64,6 +87,11 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media(max-width){
+    .sign{
+        justify-content:first baseline;
+    }
 }
 
 .entrar p {
