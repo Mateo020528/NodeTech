@@ -64,6 +64,7 @@ footer{
     color:#ffff;
     gap: 15px;
     position: relative;
+    border-bottom: 1px solid #141d47;
 }
 footer p {
     max-width: 400px;
@@ -101,3 +102,69 @@ a:hover{
     background-color: #050a24;
     
 }
+/* @media (max-width:900px){
+    .mision,.vision{
+        display: none;
+    }
+    .linea{
+        display: none;
+    }
+} */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .articles-img img {
+      width: 600px;
+    }
+    .articles {
+      flex-direction: column;
+    }
+    .articles-text {
+      width: 600px;
+    }
+    .mision {
+      display: none;
+    }
+    .vision {
+      display: none;
+    }
+  }
+  @media  screen and (min-width: 375) and (max-width: 700px){
+    .media-img{
+        width: 500px;
+    }
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  @media screen and (min-width: 375px) and (max-width: 700px) {
+    .articles-img img {
+      width: 350px;
+    }
+    .articles {
+      flex-direction: column;
+    }
+    .articles-text {
+      width: 350px;
+    }
+    .mision {
+      display: none;
+    }
+    .vision {
+      display: none;
+    }
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .ubicacion{
+        margin-right: 0px;
+        }
+    .informacion{
+        margin-left: 0px;
+        }
+  }
