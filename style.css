@@ -120,11 +120,9 @@ footer p {
   align-items: center;
 }
 .ubicacion {
-  /* margin-top: 50px; */
   margin-right: 20px;
 }
 .informacion {
-  /* margin-top: 50px; */
   margin-left: 25px;
 }
 .footer-content {
@@ -137,7 +135,7 @@ footer p {
 .copyrigt {
   background-color: #050a24;
 }
-
+/* responsive */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   .articles-img img {
     width: 600px;
@@ -175,5 +173,14 @@ footer p {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+  .ubicacion {
+    margin-right: 0px;
+  }
+  .informacion {
+    margin-left: 0px;
+  }
+  .info {
+    margin-left: 0px;
   }
 }
