@@ -1,87 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
 }
-label{
-    font-weight: bold;
+label {
+  font-weight: bold;
 }
-.container-fluid{
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-    /* gap: 21px; */
+.container-fluid {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  /* gap: 21px; */
 }
 
-.card-logo{
-    display: flex;
-    flex-direction: column;
-    background-color: #050A24;
+.card-logo {
+  display: flex;
+  flex-direction: column;
+  background-color: #050a24;
+  color: white;
+  width: 70vw;
+  height: 720px;
+  width: 520px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .card-logo {
+    display: none;
+  }
+
+  .p-logo {
+    display: none;
+  }
+  .card-login {
+    background-image: url(../assets/logo.png);
+    background-color: #050a24;
+    background-size: 700px 700px;
     color: white;
-    width: 70vw;
-    height: 720px;
-    width: 542px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;    
+    padding-right: 20px;
+  }
 }
-@media(max-width:800px){
-    .card-logo{
-        display: none;        
-        }
 
-    .p-logo {
-        display: none;
-    }
-    .card-login{
-        background-image: url(../assets/logo.png);
-        background-color: #050A24;
-        background-size: 700px 700px;
-        color: white;
-        padding-right: 20px;
-    }
-}
-    
 .p-logo {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    font-family: Rowdies;
-    
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-family: Rowdies;
 }
 .card-login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 720px;
-    width: 500px;
-    padding: 20px,auto;
-    padding-left: 7%;
-    padding-right: 50px;
-    box-shadow: 0px 0px 50px black;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 720px;
+  width: 500px;
+  padding: 20px, auto;
+  padding-left: 4%;
+  padding-right: 50px;
+  box-shadow: 0px 0px 50px black;
+  border-radius: 5px;
 }
-h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rowdies-regular {
-    font-family: "Rowdies", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-.terminos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.terminosCondiciones{
-    display: flex;
-    gap: 10px;
+.terminos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.terminosCondiciones {
+  display: flex;
+  gap: 10px;
 }
