@@ -18,7 +18,7 @@ p{
 /* COLOR PALETTE  */
 :root{
   --titulos: #050a24;
-  --cards: rgba(220, 209, 202, 0.396);
+  --cards: rgba(151, 119, 98, 0.075);
 }
 
 /* HEADER */
@@ -66,8 +66,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin: 50px;
-  background-color: var(--secundario);
+  background-color: var(--cards);
   padding: 20px;
+  border-radius: 10px;
 }
 
 .articles-img {

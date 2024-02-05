@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- header boostrap -->
+    <!-- HEADER WITH BOOSTRAP-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a href="../index.html" class="navbar-brand"><img src="../assets/Logo footer.png" width=110px></a>
@@ -40,37 +40,43 @@
                     <li class="nav-item text-align-center">
                         <a class="nav-link active text-light" aria-current="page" href="../account/index.html">CUENTA</a>
                     </li>
-                    <li class="nav-item text-align-center">
-                        <a class="nav-link active text-light" aria-current="page" href="../login/index.html">LOGIN</a>
-                    </li>                  
                 </ul>                
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>                    
+                    <button class="btn btn-secondary ms-2"><a href="../login/index.html">login</a></button>
                 </form>
             </div>
         </div>
     </nav>  
-    <!--  end navBAr -->
-    <!-- content -->
+    <!--  END HEADER -->
+
+    <!-- CONTENT -->
     <div class="container d-flex justify-content-center">
         <div class="row">
             <h1 class="media-query">MEDIA QUERIES</h1>
-            <img class="media-img" src="../assets/Media-Queries 1.png" alt="Media-Queries" width="700px">
-            <p>Hola en este articulo encontraras una breve descripción, el para que sirven y el como funciona las media queries o el diseño responsive. luego de leer presentaras un pequeño test para afianzar tus conocimientos y tambien encontraras informacion interactiva...</p>
-            <h2 class="title d-flex flex-column align-items-center">El uso de los media queries:</h2>
+            <p>Existe un concepto denominado media queries, mediante el cuál podemos hacer excepciones para que unos determinados estilos de diseño sólo se apliquen si se cumplen una serie de condiciones, generalmente relacionadas con el dispositivo mediante el cuál se está viendo la página</p>
+            <h2 class="title d-flex flex-column align-items-center">¿Qué son?</h2>
+            <p>Una Media Query es una regla o conjunto de reglas que se introducen en una hoja de estilo CSS con el objetivo de definir propiedades específicas para distintos tipos de medios. Por ejemplo, con una Media Query podemos especificar el ancho y el alto de un contenido, de manera que este se adapte a los límites de una impresora sin tener que cambiar el contenido original. </p>
+            <h2 class="title d-flex flex-column align-items-center">¿Cómo se usan?</h2>
             <p>Para empezar con los mediaQueries queries tenemos que saber primero que es: Una media query es una función de CSS3 que permite especificar la visualización de un documento para diferentes medios de salida y tamaños de pantalla. La visualización se ajusta en función de determinadas condiciones como el tipo de medio, la orientación de la pantalla o su resolución. Desde junio del 2012, las media queries se han convertido en un estándar de diseño responsive recomendado por el World Wide Web Consortium.</p>
-            <h2 class="title d-flex flex-column align-items-center">¿Para que sirven la Media query?</h2>
+            <h2 class="title d-flex flex-column align-items-center">¿Para qué Sirven?</h2>
             <p> Una parte esencial del diseño responsivo es crear una experiencia de uso adecuada para cada dispositivo. Así pues, las media queries se encargan de que la respuesta enviada a un navegador cliente contenga el tipo de visualización correcta según la página web, basándose en las propiedades inherentes al dispositivo en el que se ejecuta. De este modo, antes de que una página web sea cargada y mostrada a los y las navegantes por un navegador, la información relacionada con los medios se recupera a través de las media queries. Una gran ventaja del media query CSS es que no es necesario especificar las resoluciones y tamaños de pantalla adecuados para cada dispositivo, pues permite ajustar las páginas web a más de un tipo de dispositivo de salida y, en consecuencia, es un elemento clave de la optimización móvil y del diseño web responsive.</p>
-            <h2 class="title d-flex flex-column align-items-center">¿Como funcionan las media queries?</h2>
+            <h2 class="title d-flex flex-column align-items-center">¿Cómo funcionan?</h2>
             <p> Las media queries CSS están conformadas por un tipo de medio (opcional) y una o más expresiones conocidas como características de medios. Asimismo, se pueden combinar múltiples media queries mediante operadores lógicos. En este sentido, las media queries se especifican mediante: "@media" y asignando un bloque CSS a una página únicamente si se cumplen las condiciones que se muestran a continuación. Así pues, el tipo de medio (media type) podría ser: un smartphone, una tableta, una impresora o un TV; y las características de los medios pueden determinarse como la orientación de la pantalla, la resolución, la altura, la anchura o los colores. Como resultado, se pueden utilizar para consultar los elementos de medio y sus características y para establecer breakpoints. Consulta de tipos de medios mediante media query El CSS para un determinado dispositivo de salida puede definirse en función de los tipos de medios (media types), sin embargo, esta consulta puede ser opcional. Si no se define ningún tipo de medio en el media query, se aplica automáticamente el valor por defecto "all". Los valores más comunes utilizados en los tipos de medios son "screen" para pantallas de desktops, tabletas y smartphones; "print" para controlar la salida de impresión de un sitio web y "speech" para la salida en un lector de pantalla que lee el contenido en voz alta.</p>
-            <h2 class="title d-flex flex-column align-items-center">Aqui tienes un ejemplo de el funcionamiento en código.</h2>
+            <h2 class="title d-flex flex-column align-items-center">Ejemplo</h2>
             <p>En este primer ejemplo, queremos que el color de fondo cambie a azul cuando el ancho del dispositivo sea de 600 px o menos. En el CSS, queremos agregar un (ancho máximo: 600 px) para la consulta de medios que le dice a la computadora que se dirija a dispositivos con un ancho de pantalla de 600 px o menos. Dentro de la consulta de medios, cambiamos los estilos de fondo para el body a background-color: #87ceeb;. Aquí está la consulta de medios completa:</p>
             <div class="ejemplo d-flex flex-column align-items-center">
                 <h3 class="title d-flex flex-column align-items-center">@media (max-width: 600px) { body { background-color: #87ceeb; } }</h3>
-            </div>                          
+            </div>  
+            <img class="media-img mb-5" src="../assets/Media-Queries 1.png" alt="Media-Queries" width="700px">                        
+            <aside>
+                <img class="media-img" src="../assets/Publicidad_1.webp" alt="" width="700px">               
+            </aside>
         </div>
     </div>
+
+    <!-- FOOTER -->
     <footer class="footer d-flex justify-content-center">
         <div class="footer-content d-flex justify-content-center align-items-center">            
             <img src="../assets/Logo footer.png" width="130px">  
