@@ -4,65 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node Tech - Crear</title>
+    <title>Crear</title>
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="app.js" defer></script>
     <!-- styles -->
     <link rel="stylesheet" href="style.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
-    <!-- header boostrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a href="../index.html" class="navbar-brand"><img src="../assets/Logo footer.png" width=110px></a>
-            <button class="navbar-toggler bg-light" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item text-align-center">
-                        <a class="nav-link active text-light" aria-current="page" href="#">HTML</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../media-query/index.html">CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../apis/index.html">JAVASCRIPT</a>
-                    </li>  
-                    <li class="nav-item text-align-center">
-                        <a class="nav-link active text-light" aria-current="page" href="../account/index.html">CUENTA</a>
-                    </li>
-                    <li class="nav-item text-align-center">
-                        <a class="nav-link active text-light" aria-current="page" href="../login/index.html">LOGIN</a>
-                    </li>                  
-                </ul>                
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>                    
-                </form>
-            </div>
-        </div>
-    </nav>  
-    <!--  end navBAr -->
+    <div class="padre d-flex">
+        <div class="row justify-content-center header">
+            <nav class="botones d-flex justify-content-center">
+                <div class="main d-flex justify-content-center align-items-center nav-bar-content">
+                    <img src="assets/logo.png" width="130px">
+                    <button class="btn btn-secondary">HTML</button>
+                    <button class="btn btn-secondary">CSS</button>
+                    <button class="btn btn-secondary">JavaScript</button>
+                    <input class="form-control search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-success">Artículo</button>
+                    <a href="account/index.html"><button class="btn btn-success">Cuenta</button></a>
+                    <a href="login/index.html"><button class="btn btn-success sesion">Log in</button></a>
+                </div>
+            </nav>
+        </div>        
+    </div>
     <main class="d-flex justify-content-center">
         <div class="contenido">
-            <h1 class="title d-flex flex-column align-items-center">Vamos a crear un artículo</h1>
-            <p class="title d-flex flex-column align-items-center">Inspírate para crear un articulo de tu preferencia sobre los temas de html, css y javascript una vez sea analizado y autorizado por nuestro equipo, será publicado en nuestra plataforma para que puedas disfrutar de tu aporte a nuestra plataforma crea, innova y sueña</p>
+            <h3 class="title d-flex flex-column align-items-center">Agradecemos enormemente tu valioso aporte de conocimientos a NODE TECH</h3>
+            <h4 class="title d-flex flex-column align-items-center">Inspírate para crear un articulo de tu preferencia; una vez sea autorizado, será publicado</h4>
             <textarea type="text" name="txtDescripcion" id="txtDescripcion" heigth="500px"></textarea>
-            <button onclick="ver()" class="botonVer">Ver</button>
-            <h1 class="title d-flex flex-column align-items-center">Visualiza tu contenido aquí!</h1>
-            <code id="amigo"></code>
+            <button onclick="ver()" class="botonVer btnArticulos">Ver</button>
+            <h4 class="title d-flex flex-column align-items-center">Visualiza como presentaríamos tu artículo en nuestra plataforma</h4>
+            <code id="amigo" ></code>
             <div id="root"></div>
-            <button class="botonPublicar">Publicar</button>
+            <button onclick="publicar()" class="botonPublicar btnArticulos">Publicar</button>
         </div>
     </main>
-    <footer class="footer d-flex flex-column w-100">
+    <footer class="footer d-flex justify-content-center">
         <div class="footer-content d-flex justify-content-center align-items-center">            
-            <img src="../assets/Logo footer.png" width="130px">  
+            <img src="./assets/Logo footer.png" width="130px">  
             <div class="ubicacion d-flex flex-column">
                 <p><b>Ubicación</b></p>
                 <p>Telefono: (+1)456-4933</p>
@@ -73,21 +54,11 @@
                 <p class="vision"><b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
             </div>
             <div class="informacion d-flex flex-column">
-                <a href="../politicas/index.html">
-                    <p><b>Información</b></p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Aviso legal</p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Términos de uso</p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Política de privacidad</p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Política de cookies</p>
-                </a>
+                <p><b>Información</b></p>
+                <p>Aviso legal</p>
+                <p>Términos de uso</p>
+                <p>Política de privacidad</p>
+                <p>Política de cookies</p>
             </div>
             <div class="info ms-5">
                 <div class="suscripcion d-flex flex-column">
@@ -103,17 +74,16 @@
                 </div>
             </div>
         </div>
-        <div class="linea">
-            <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-        </div>
-        <div class="copyrigt d-flex flex-row justify-content-center">
-            <p>© Copyright 2024, All Rights Reserved</p>        
-        </div>        
-    </footer>  
-    <!-- libreria del generador de javascript para los articulos -->
-    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>   
-    <!-- script de boostrap -->  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+    </footer>
+    <div class="linea d-flex justify-content-center">
+        <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    </div>
+    <div class="copyrigt d-flex flex-row justify-content-center">
+        <p>© Copyright 2024, All Rights Reserved</p>        
+    </div>
+        
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
