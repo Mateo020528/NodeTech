@@ -24,6 +24,10 @@ p{
     font-family: serif;
 }
 
+aside{
+    float: left;
+}
+
 /* COLOR PALETTE  */
 :root{
     --titulos: #050a24;
@@ -123,14 +127,7 @@ a:hover{
     background-color: #050a24;
     
 }
-/* @media (max-width:900px){
-    .mision,.vision{
-        display: none;
-    }
-    .linea{
-        display: none;
-    }
-} */
+
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     .articles-img img {
       width: 600px;
@@ -184,8 +181,8 @@ a:hover{
     }
     .ubicacion{
         margin-right: 0px;
-        }
+    }
     .informacion{
         margin-left: 0px;
-        }
+    }
   }

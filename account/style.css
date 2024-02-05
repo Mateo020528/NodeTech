@@ -1,3 +1,33 @@
+/* IMPORT FONTS OF GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS FOR TITLES*/
+h1{
+    font-family: 'Protest Riot', sans-serif;
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    text-decoration: underline;
+}
+
+p{
+    font-family: serif;
+}
+
+/* COLOR PALETTE  */
+:root{
+    --titulos: #050a24;
+    --cards: rgba(151, 119, 98, 0.075);
+}
+
 /* HEADER */
 nav{
     justify-content: center;
@@ -29,6 +59,16 @@ nav{
     gap: 20px;
 }
 
+img :not(.flags){
+    border-radius: 20px;
+}
+
+.parrafo1, .parrafo2{
+    background-color: var(--cards);
+    border-radius: 10px;
+    padding: 20px;
+}
+
 .container-fluid{
     background-color: #050a24;
     color: #fff;
@@ -52,10 +92,15 @@ nav{
 .Izquierda{
     width: 500px;
     margin-bottom: 20px;
+    background-color: #76769252;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .Derecha{
     width: 60vw;
+    margin-top: 30px;
 }
 
 .Derecha h2{
@@ -86,11 +131,6 @@ a{
     text-decoration: none;
 }
 
-/* .sesion{
-    right: 320px;
-    position: absolute;
-} */
-
 small{
     justify-content: center;
 }
@@ -102,11 +142,6 @@ button{
 a{
     display: flex;
     justify-content: center;
-}
-
-hr{
-    position: relative;
-    top: -40PX;
 }
 
 h1{
@@ -126,12 +161,18 @@ a:hover{
     color: grey
 }
 
+.linea{
+    background-color: #050a24;
+    color: #E4E4E7;
+}
+
 /* Footer */
 footer{
     background-color: #050a24;
     color:#ffff;
     gap: 15px;
     position: relative;
+    border-bottom: 1px solid #1d223d;
 }
 footer p {
     max-width: 400px;
