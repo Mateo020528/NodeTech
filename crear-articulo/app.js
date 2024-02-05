@@ -16,5 +16,5 @@ localStorage.setItem("texto", texto.innerHTML)
 }
 
 function publicar() {
-    location.href = "./index2.html"
+    location.href = "./nuevoArticulo/index2.html"
 }
