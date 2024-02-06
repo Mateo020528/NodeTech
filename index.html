@@ -1,183 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Node Tech</title>
-    <!-- BOOSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- JAVASCRIPT -->
-    <script src="assets/traduccion.js" defer></script>
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
-  </head>
 
-  <body>
-    <!-- HEADER WITH BOOSTRAP -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand"><img src="assets/Logo footer.png" width="110px" /></a>
-        <button
-          class="navbar-toggler bg-light"
-          id="menu"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item text-align-center">
-              <a class="nav-link active text-light" aria-current="page" href="#">HTML</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="media-query/index.html">CSS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="apis/index.html">JAVASCRIPT</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            <button class="btn btn-secondary ms-2"><a href="account/index.html">Cuenta</a></button>
-            <button class="btn btn-secondary ms-2"><a href="login/index.html">login</a></button>
-          </form>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Node Tech</title>
+  <!-- BOOSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- JAVASCRIPT -->
+  <script src="assets/traduccion.js" defer></script>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- HEADER WITH BOOSTRAP -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="assets/Logo footer.png" width="110px" /></a>
+      <button class="navbar-toggler bg-light" id="menu" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-align-center">
+            <a class="nav-link active text-light" aria-current="page" href="#">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="media-query/index.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="apis/index.html">JAVASCRIPT</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-secondary ms-2"><a href="account/index.html">Cuenta</a></button>
+          <button class="btn btn-secondary ms-2"><a href="login/index.html">login</a></button>
+        </form>
       </div>
-    </nav>
-    <!--  END HEADER -->
+    </div>
+  </nav>
+  <!--  END HEADER -->
 
-    <!-- CARDS -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <a href="media-query/index.html">
-            <div class="first-article">
-              <div class="articles" id="first">
-                <div class="articles-img">
-                  <img src="./assets/first.png" width="600px" />
-                </div>
-                <div class="articles-text">
-                  <h1 class="articles-text-title">MEDIAS QUERIES</h1>
-                  <p class="articles-text-text">
-                    El diseño responsivo tiene como objetivo adaptar la visualización de una página web a cada
-                    dispositivo de la mejor manera posible. Las Media Queries se utilizan para obtener las
-                    características técnicas del dispositivo que solicita la visualización de la página web.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <div class="second-article">
+  <!-- CARDS -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="media-query/index.html">
+          <div class="first-article art">
             <div class="articles" id="first">
               <div class="articles-img">
-                <img src="./assets/second.png" width="600px" />
+                <img src="./assets/first.png" width="600px" />
               </div>
               <div class="articles-text">
-                <h1 class="articles-text-title">DISPLAY GRID</h1>
+                <h1 class="articles-text-title">MEDIAS QUERIES</h1>
                 <p class="articles-text-text">
-                  El internet móvil presenta un gran número de desafíos para los diseñadores de páginas web debido a la
-                  enorme variedad de diseños de los dispositivos móviles, es imposible saber qué formato tiene la
-                  pantalla en la que se visualizará el contenido web.
+                  El diseño responsivo tiene como objetivo adaptar la visualización de una página web a cada
+                  dispositivo de la mejor manera posible. Las Media Queries se utilizan para obtener las
+                  características técnicas del dispositivo que solicita la visualización de la página web.
                 </p>
               </div>
             </div>
           </div>
-          <a href="apis/index.html">
-            <div class="three-article">
-              <div class="articles" id="firts">
-                <div class="articles-img">
-                  <img src="./assets/third.png" width="600px" />
-                </div>
-                <div class="articles-text">
-                  <h1 class="articles-text-title">APIS EN EL DISEÑO WEB</h1>
-                  <p class="articles-text-text">
-                    El término API significa Application Programming Interface y se basa en un conjunto de definiciones
-                    y protocolos que tienen el propósito de integrar sistemas y facilitar la comunicación entre
-                    aplicaciones de software según una serie de reglas.
-                  </p>
-                </div>
+        </a>
+        <div class="second-article art">
+          <div class="articles" id="first">
+            <div class="articles-img">
+              <img src="./assets/second.png" width="600px" />
+            </div>
+            <div class="articles-text">
+              <h1 class="articles-text-title">DISPLAY GRID</h1>
+              <p class="articles-text-text">
+                El internet móvil presenta un gran número de desafíos para los diseñadores de páginas web debido a la
+                enorme variedad de diseños de los dispositivos móviles, es imposible saber qué formato tiene la
+                pantalla en la que se visualizará el contenido web.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="apis/index.html">
+          <div class="three-article art">
+            <div class="articles" id="firts">
+              <div class="articles-img">
+                <img src="./assets/third.png" width="600px" />
+              </div>
+              <div class="articles-text">
+                <h1 class="articles-text-title">APIS EN EL DISEÑO WEB</h1>
+                <p class="articles-text-text">
+                  El término API significa Application Programming Interface y se basa en un conjunto de definiciones
+                  y protocolos que tienen el propósito de integrar sistemas y facilitar la comunicación entre
+                  aplicaciones de software según una serie de reglas.
+                </p>
               </div>
             </div>
-          </a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer d-flex justify-content-center">
+    <div class="footer-content d-flex justify-content-center align-items-center">
+      <img src="assets/Logo footer.png" width="130px" />
+      <div class="ubicacion d-flex flex-column footer-1">
+        <p>Telefono: (+1)456-4933</p>
+        <p>Correo: mail@example.com</p>
+      </div>
+      <div class="acerca d-flex flex-column footer-2">
+        <p class="mision">
+          <b>Misión:</b> Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el
+          aprendizaje interactivo es una buena manera de aprender.
+        </p>
+        <p class="vision">
+          <b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante
+          Articulos interactivos.
+        </p>
+      </div>
+      <div class="informacion d-flex flex-column footer-3">
+        <a href="politicas/index.html" class="politicas">
+          <p>Aviso legal</p>
+        </a>
+        <a href="politicas/index.html" class="politicas">
+          <p>Términos de uso</p>
+        </a>
+        <a href="politicas/index.html" class="politicas">
+          <p>Política de privacidad</p>
+        </a>
+        <a href="politicas/index.html" class="politicas">
+          <p>Política de cookies</p>
+        </a>
+      </div>
+      <div class="info footer-4">
+        <div class="suscripcion d-flex flex-column">
+          <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
+          <div class="input d-flex">
+            <input type="email" id="email" class="form-control d-flex" placeholder="Email" />
+            <button class="btn btn-primary">Join</button>
+          </div>
+        </div>
+        <div class="nosotros d-flex justify-content-center">
+          <br />
+          <p>email: mail@example.com</p>
+        </div>
+        <div class="banderas d-flex column-gap-3 justify-content-center">
+          <div class="flags" id="colombia" onclick="traducirEs()">
+            <img src="assets/colombia.svg" />
+          </div>
+          <div class="flags" id="estados-unidos" onclick="traducirEn()">
+            <img src="assets/estados-unidos.svg" />
+          </div>
         </div>
       </div>
     </div>
+  </footer>
+  <div class="copyrigt d-flex flex-row justify-content-center footer-6">
+    <p>© Copyright 2024, All Rights Reserved</p>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer d-flex justify-content-center">
-      <div class="footer-content d-flex justify-content-center align-items-center">
-        <img src="assets/Logo footer.png" width="130px" />
-        <div class="ubicacion d-flex flex-column footer-1">
-          <p>Telefono: (+1)456-4933</p>
-          <p>Correo: mail@example.com</p>
-        </div>
-        <div class="acerca d-flex flex-column footer-2">
-          <p class="mision">
-            <b>Misión:</b> Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el
-            aprendizaje interactivo es una buena manera de aprender.
-          </p>
-          <p class="vision">
-            <b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante
-            Articulos interactivos.
-          </p>
-        </div>
-        <div class="informacion d-flex flex-column footer-3">
-          <a href="politicas/index.html" class="politicas">
-            <p>Aviso legal</p>
-          </a>
-          <a href="politicas/index.html" class="politicas">
-            <p>Términos de uso</p>
-          </a>
-          <a href="politicas/index.html" class="politicas">
-            <p>Política de privacidad</p>
-          </a>
-          <a href="politicas/index.html" class="politicas">
-            <p>Política de cookies</p>
-          </a>
-        </div>
-        <div class="info footer-4">
-          <div class="suscripcion d-flex flex-column">
-            <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
-            <div class="input d-flex">
-              <input type="email" id="email" class="form-control d-flex" placeholder="Email" />
-              <button class="btn btn-primary">Join</button>
-            </div>
-          </div>
-          <div class="nosotros d-flex justify-content-center">
-            <br />
-            <p>email: mail@example.com</p>
-          </div>
-          <div class="banderas d-flex column-gap-3 justify-content-center">
-            <div class="flags" id="colombia" onclick="traducirEs()">
-              <img src="assets/colombia.svg" />
-            </div>
-            <div class="flags" id="estados-unidos" onclick="traducirEn()">
-              <img src="assets/estados-unidos.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="copyrigt d-flex flex-row justify-content-center footer-6">
-      <p>© Copyright 2024, All Rights Reserved</p>
-    </div>
+  <!-- SCRIPT OF BOOSTRAP FOR JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
 
-    <!-- SCRIPT OF BOOSTRAP FOR JAVASCRIPT -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/"
-      crossorigin="anonymous"></script>
-  </body>
 </html>

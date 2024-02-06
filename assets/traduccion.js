@@ -64,13 +64,14 @@ fetch(url ,optionsUs).then(r=>r.json()).then(d=>{
     // body.innerHTML = d.trans
     localStorage.setItem("bodyEs", body.innerHTML)
     localStorage.setItem("bodyEn", d.trans)
-    console.log("Traducido a Inglés!")
 }).catch(err => console.error("ERROR: ", err.message));
 
 function traducirEn() {
     body.innerHTML = localStorage.getItem("bodyEn");
+    console.log("Traducido a Inglés!")
 }
 
 function traducirEs() {
     body.innerHTML = localStorage.getItem("bodyEs");
+    console.log("Traducido a Español!")
 }
