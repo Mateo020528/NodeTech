@@ -1,18 +1,46 @@
-body{
-    height: 100dvh;
+/* IMPORT FONTS OF GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+/* STANDARIZATE THE CODE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS FOR TITLES*/
+h1 {
+    font-family: "Protest Riot", sans-serif;
+}
+
+p {
+    font-family: serif;
+}
+
+/* COLOR PALETTE  */
+:root {
+    --titulos: #050a24;
+    --cards: rgba(151, 119, 98, 0.075);
 }
 
 /* HEADER */
-nav{
+nav {
     justify-content: center;
+    background-color: var(--titulos);
 }
 
-.flags img{
+.flags img {
     cursor: pointer;
     width: 50px;
 }
 
-.navbar{
+.container-fluid {
+    background-color: var(--titulos);
+    color: #fff;
+}
+
+.navbar {
     --bs-navbar-padding-y: 0rem;
 }
 
@@ -20,101 +48,122 @@ nav{
     justify-content: center;
 }
 
-.nav-bar-content{
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar-content {
     width: 98vw !important;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .search {
     width: 25%;
 }
 
-.main{
+footer{
+    margin-top: auto;
+}
+
+.main {
     display: flex;
     gap: 20px;
 }
 
-.container-fluid{
+.btnArticulos {
+    padding: 5px 10px;
     background-color: #050a24;
     color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.btnArticulos:hover {
+    font-weight: bold;
+    background-color: #4e64d4;
 }
 
-a:hover{
-    color: grey
-}
 
-footer{
+/* FOOTER */
+footer {
     background-color: #050a24;
-    color:#ffff;
+    color: #ffff;
     gap: 15px;
     position: relative;
-    bottom: 0px;
+    border-bottom: 2px solid #1d223d;
 }
 
-.mision,
-.vision {
+footer {
+    background-color: #050a24;
+    color: #ffff;
+    gap: 15px;
+    position: relative;
+}
+
+footer p {
     max-width: 400px;
 }
 
-.logo_img{
+.logo_img {
     margin: -20px;
     position: absolute;
     top: 5px;
     left: 5px;
 }
 
-.contenido{
+.contenido {
     width: 70dvw;
     margin-top: 20px;
-    border: 2px black;
 }
 
-.contenido .botonVer{
+.contenido2 {
+    width: 70dvw;
+    margin-top: 20px;
+}
+
+.contenido .botonVer {
     display: flex;
     top: 0;
     left: 0;
     margin-left: 917px;
 }
 
-.contenido .botonPublicar{
+.contenido .botonPublicar {
     display: flex;
     top: 0;
     left: 0;
     margin-left: 885px;
 }
 
-.acerca{
-    margin-top:30px;
-    }
-.suscripcion{
+.acerca {
+    margin-top: 30px;
+}
+
+.suscripcion {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ubicacion{
-    /* margin-top: 50px; */
-    margin-right: 20px;
-}
-.informacion{
-    /* margin-top: 50px; */
+
+.informacion {
     margin-left: 25px;
 }
+
 .footer-content {
     width: 90dvw;
 }
-.linea{
+
+.linea {
     background-color: #050a24;
     color: #E4E4E7;
 }
-.copyrigt{
+
+.copyrigt {
     background-color: #050a24;
-    
 }
-/*
-.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred{
-    height: 700px;
-}*/
