@@ -1,153 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Node Tech - Cuenta</title>
     <!-- BOOSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- JAVASCRIPT -->
     <script src="app.js" defer></script>
     <script src="../assets/traduccion.js" defer></script>
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a href="../index.html" class="navbar-brand"><img src="../assets/Logo footer.png" width=110px></a>
-            <button class="navbar-toggler bg-light" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item text-align-center">
-                        <a class="nav-link active text-light" aria-current="page" href="#">HTML</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../media-query/index.html">CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../apis/index.html">JAVASCRIPT</a>
-                    </li>  
-                </ul>                
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>   
-                </form>
-            </div>
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"
+          ><img class="imagen" src="../assets/Logo footer.png" width="110px"
+        /></a>
+        <button
+          class="navbar-toggler bg-light"
+          id="menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item text-align-center">
+              <a class="nav-link active text-light" aria-current="page" href="#">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="../media-query/index.html">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="../apis/index.html">JAVASCRIPT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-    </nav>  
+      </div>
+    </nav>
     <!--  END HEADER -->
 
     <!-- CONTENT LEFT -->
     <div class="container d-flex">
-        <div class="Izquierda">
-            <h1>Tu Cuenta</h1>
-            <img src="../assets/imagen.avif" width="250px">
-            <h2>Nombre</h2>
-            <p>Camila</p>
-            <h2>Apellido</h2>
-            <p>Zuluaga Zuñiga</p>
-            <h2>Estudios Academicos Avanzados</h2>
-            <ol>
-                <li>Ingeniero Biomedico</li>
-                <li>Especialización en equipos Biomedicos</li>
-                <li>Doctorado en residuos biomedicos prehospitalarios</li>
-            </ol>
-            <h2>Edad</h2>
-            <p>43 años de edad</p>
-            <h2>Descripción</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam fuga nulla aliquid vero. Alias nulla nihil explicabo nemo, unde deserunt id nisi ullam laboriosam consequuntur illo rerum dolores? Vero, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi similique debitis non saepe recusandae odio, ipsa provident, aperiam beatae magni earum rerum omnis vel exercitationem eum reprehenderit laudantium veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae eligendi praesentium ad enim aperiam nam eos nisi, odit facere nobis delectus necessitatibus amet, id minus. Fuga tempore illum molestiae? Numquam.</p>
+      <div class="Izquierda">
+        <h1>Tu Cuenta</h1>
+        <img src="../assets/imagen.avif" class="imagen" width="250px" />
+        <h2>Nombre</h2>
+        <p>Camila</p>
+        <h2>Apellido</h2>
+        <p>Zuluaga Zuñiga</p>
+        <h2>Estudios Academicos Avanzados</h2>
+        <ol>
+          <li>Ingeniero Biomedico</li>
+          <li>Especialización en equipos Biomedicos</li>
+          <li>Doctorado en residuos biomedicos prehospitalarios</li>
+        </ol>
+        <h2>Edad</h2>
+        <p>43 años de edad</p>
+        <h2>Descripción</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam fuga nulla aliquid vero. Alias nulla
+          nihil explicabo nemo, unde deserunt id nisi ullam laboriosam consequuntur illo rerum dolores? Vero,
+          laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi similique debitis non
+          saepe recusandae odio, ipsa provident, aperiam beatae magni earum rerum omnis vel exercitationem eum
+          reprehenderit laudantium veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
+          eligendi praesentium ad enim aperiam nam eos nisi, odit facere nobis delectus necessitatibus amet, id minus.
+          Fuga tempore illum molestiae? Numquam.
+        </p>
+      </div>
+      <!-- CONTENT RIGHT -->
+      <div class="Derecha">
+        <h2>Artículos Recomendados</h2>
+        <div class="parrafo1 mb-3">
+          <img src="../assets/Bucles.jpg" class="imagen" width="400px" />
+          <div class="texto1">
+            <h3>Bucles o Ciclos en Javascript</h3>
+            <p>
+              En JavaScript los bucles (loops) son utilizados para realizar tareas repetitivas con base en una
+              condición. Las condiciones típicamente devuelven true (verdadero) o false(falso) al ser evaluados. El
+              bucle continuará ejecutándose hasta que la condición devuelva false.
+            </p>
+            <button class="btn btn-warning">Editar</button>
+            <button class="btn btn-warning">Eliminar</button>
+          </div>
         </div>
-        <!-- CONTENT RIGHT -->
-        <div class="Derecha">
-            <h2>Artículos Recomendados</h2>
-            <div class="parrafo1 mb-3">
-                <img src="../assets/Bucles.jpg" alt="" width="400px">
-                <div class="texto1">
-                    <h3>Bucles o Ciclos en Javascript</h3>
-                    <p>
-                        En JavaScript los bucles (loops) son utilizados para realizar tareas repetitivas con base en una condición. Las condiciones típicamente devuelven true (verdadero) o false(falso) al ser evaluados. El bucle continuará ejecutándose hasta que la condición devuelva false.
-                    </p>
-                    <button class="btn btn-warning">Editar</button>
-                    <button class="btn btn-warning">Eliminar</button>
-                </div>
-            </div>
-            <div class="parrafo2">
-                <img src="../assets/Condicionales.png" alt="" width="400px" height="400px">
-                <div class="texto2">
-                    <h3>Condicionales en Javascript</h3>
-                    <p>
-                        El condicional if…else se usa para ejecutar un bloque de código si la condición es verdadera u otro bloque de código si la condición falsa.
-                    </p>
-                    <button class="btn btn-warning">Editar</button>
-                    <button class="btn btn-warning">Eliminar</button>
-                </div>
-            </div>
+        <div class="parrafo2">
+          <img src="../assets/Condicionales.png" class="imagen" width="400px" height="400px" />
+          <div class="texto2">
+            <h3>Condicionales en Javascript</h3>
+            <p>
+              El condicional if…else se usa para ejecutar un bloque de código si la condición es verdadera u otro bloque
+              de código si la condición falsa.
+            </p>
+            <button class="btn btn-warning">Editar</button>
+            <button class="btn btn-warning">Eliminar</button>
+          </div>
         </div>
+      </div>
     </div>
     <!-- footer -->
     <footer class="footer d-flex justify-content-center">
-        <div class="footer-content d-flex justify-content-center align-items-center">            
-            <img src="../assets/Logo footer.png" width="130px">  
-            <div class="ubicacion d-flex flex-column">
-                <p>Telefono: (+1)456-4933</p>
-                <p>Correo: mail@example.com</p>
-            </div>
-            <div class="acerca d-flex flex-column">
-                <p class="mision"><b>Misión:</b> Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el aprendizaje interactivo es una buena manera de aprender.</p>
-                <p class="vision"><b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante Articulos interactivos.</p>
-            </div>
-            <div class="informacion d-flex flex-column">                
-                <a href="../politicas/index.html">
-                    <p>Aviso legal</p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Términos de uso</p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Política de privacidad</p>
-                </a>
-                <a href="../politicas/index.html">
-                    <p>Política de cookies</p>
-                </a>
-            </div>
-            <div class="info ms-5">
-                <div class="suscripcion d-flex flex-column">
-                    <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
-                    <div class="input d-flex">
-                        <input type="email"  id="email" class="form-control d-flex"placeholder="Email">
-                        <button class="btn btn-primary">Join</button>
-                    </div>
-                </div>
-                <div class="nosotros d-flex justify-content-center">
-                    <br> 
-                    <p>email: mail@example.com</p>
-                </div>
-                <div class="banderas d-flex column-gap-3 justify-content-center">
-                    <div class="flags" id="colombia" onclick="traducirEs()">
-                        <img src="../assets/colombia.svg" />
-                    </div>
-                    <div class="flags" id="estados-unidos" onclick="traducirEn()">
-                        <img src="../assets/estados-unidos.svg" />
-                    </div>
-                </div>
-            </div>
+      <div class="footer-content d-flex justify-content-center align-items-center">
+        <img src="../assets/Logo footer.png" width="130px" />
+        <div class="ubicacion d-flex flex-column">
+          <p>Telefono: (+1)456-4933</p>
+          <p>Correo: mail@example.com</p>
         </div>
-    </footer>    
+        <div class="acerca d-flex flex-column">
+          <p class="mision">
+            <b>Misión:</b> Transformar vidas en este mundo tecnológico de hiper aprendizaje demostrando que el
+            aprendizaje interactivo es una buena manera de aprender.
+          </p>
+          <p class="vision">
+            <b>Visión:</b> Transformamos el aprendizaje haciendo que el usuario se apropie de su conocimiento mediante
+            Articulos interactivos.
+          </p>
+        </div>
+        <div class="informacion d-flex flex-column">
+          <a href="../politicas/index.html">
+            <p>Aviso legal</p>
+          </a>
+          <a href="../politicas/index.html">
+            <p>Términos de uso</p>
+          </a>
+          <a href="../politicas/index.html">
+            <p>Política de privacidad</p>
+          </a>
+          <a href="../politicas/index.html">
+            <p>Política de cookies</p>
+          </a>
+        </div>
+        <div class="info ms-5">
+          <div class="suscripcion d-flex flex-column">
+            <p class="suscribete">SUSCRIBETE PARA MAS INFORMACIÓN</p>
+            <div class="input d-flex">
+              <input type="email" id="email" class="form-control d-flex" placeholder="Email" />
+              <button class="btn btn-primary">Join</button>
+            </div>
+          </div>
+          <div class="nosotros d-flex justify-content-center">
+            <br />
+            <p>email: mail@example.com</p>
+          </div>
+          <div class="banderas d-flex column-gap-3 justify-content-center">
+            <div class="flags" id="colombia" onclick="traducirEs()">
+              <img src="../assets/colombia.svg" />
+            </div>
+            <div class="flags" id="estados-unidos" onclick="traducirEn()">
+              <img src="../assets/estados-unidos.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="copyrigt d-flex flex-row justify-content-center">
-        <p>© Copyright 2024, All Rights Reserved</p>        
+      <p>© Copyright 2024, All Rights Reserved</p>
     </div>
-</body>
-
+  </body>
 </html>
