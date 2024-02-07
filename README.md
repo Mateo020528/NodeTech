@@ -54,7 +54,6 @@ La característica mas importante y que define a Node Tech es la capacidad que t
 - [Fetch](https://developer.mozilla.org/es/docs/Web/API/fetch)
 
 ## Autores
-Los autores de este proyecto fueron 👧🏻[Angelica Martinez](https://developer.mozilla.org/es/docs/Web/API/fetchhttps://github.com/Angelica9924), 👦[Mateo Veléz](https://github.com/Mateo020528), 👦🏽[Maicol Agudelo](https://github.com/kemtch19)
+Los autores de este proyecto fueron 👧🏻[Angelica Martinez](https://developer.mozilla.org/es/docs/Web/API/fetchhttps://github.com/Angelica9924), 👦[Mateo Veléz](https://github.com/Mateo020528), 👦🏽[Maicol Agudelo](https://github.com/kemtch19) Agradecimientos especiales a [Juan Camilo](https://github.com/kemtch19?tab=following)
 
-Agradecimientos especiales a [Juan Camilo](https://github.com/kemtch19?tab=following)
 <img align="center" src="./assets/juanky.jpg" width="200px">
