@@ -1,5 +1,8 @@
-<div align="center"><h1>NODE TECH</h1></div>
-<img align="center" src="./assets/Logo footer.png" width="300px" >
+<div align="center">
+   <h1>NODE TECH</h1>
+   <img align="center" src="./assets/Logo footer.png" width="300px" >
+</div>
+
 
 Node tech nace por la necesidad que encontramos en la actualidad para los diferentes fuentes de información relacionadas al mundo tecnologico, en donde la industria exige en la mayor brevedad posible el conocimiento y la aplicabilidad de el mismo para el sistema de negocios.<br>
 
