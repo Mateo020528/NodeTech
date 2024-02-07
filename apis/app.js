@@ -1,3 +1,4 @@
+//Se crea un objeto que contiene la pregunta, las opciones de respuesta y la respuesta correcta
 const questions = [
     {
         question: "¿Qué significan las APIS en el contexto del diseño web?",
@@ -26,14 +27,16 @@ const questions = [
         }
     ];
     
+    //Se llaman todas las clases de los elementos que necesitamos del HTML para hacer funcional el cuestionario
     const quizContainer = document.getElementById('quiz');
     const questionContainer = document.getElementById('question');
     const optionsContainer = document.getElementById('options');
     const submitButton = document.getElementById('submit');
     
+    //Se crean variables para las preguntas y las respuestas correctas (puntaje)
     let currentQuestion = 0;
     let score = 0;
-    
+    //Esta funcion recorre el objeto de preguntas y crea botones por cada opcion de respuesta
     function showQuestion() {
         const q = questions[currentQuestion];
         questionContainer.textContent = q.question;
@@ -47,7 +50,7 @@ const questions = [
         optionsContainer.appendChild(button);
         });
     }
-    
+    //Esta funcion se encarga de comparar la respuesta seleccionada con la respuesta correcta, si son iguales sube el puntaje, si la pregunta es menor a 5 pasa de pregunta si no muestra el puntaje obtenido
     function checkAnswer(answer) {
         if (answer === questions[currentQuestion].answer) {
         score++;
@@ -59,7 +62,7 @@ const questions = [
         showResult();
         }
     }
-    
+    //Esta funcion muestra el puntaje obtenido
     function showResult() {
         quizContainer.innerHTML = `
         <h1>Resultado</h1>
@@ -67,5 +70,6 @@ const questions = [
         `;
     }
     
+    //Es lo que aparece al principio ( la primera pregunta) y llama la funcion del puntaje al darle clic al boton enviar
     showQuestion();
     submitButton.addEventListener('click', showResult);
