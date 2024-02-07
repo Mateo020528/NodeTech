@@ -1,27 +1,79 @@
+/* IMPORT FONTS OF GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+/* STANDARIZATE THE CODE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS FOR TITLES*/
+h1 {
+    font-family: "Protest Riot", sans-serif;
+}
+
+p {
+    font-family: serif;
+}
+
+/* COLOR PALETTE  */
+:root {
+    --titulos: #050a24;
+    --cards: rgba(151, 119, 98, 0.075);
+}
+
 /* HEADER */
 nav {
     justify-content: center;
+    background-color: var(--titulos);
+}
+
+.flags img {
+    cursor: pointer;
+    width: 50px;
+}
+
+.container-fluid {
+    background-color: var(--titulos);
+    color: #fff;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0rem;
 }
 
 .padre {
     justify-content: center;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 .nav-bar-content {
     width: 98vw !important;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .search {
     width: 25%;
 }
 
+footer{
+    margin-top: auto;
+}
+
 .main {
     display: flex;
     gap: 20px;
-}
-
-.header {
-    background-color: #050a24;
 }
 
 .btnArticulos {
@@ -37,13 +89,15 @@ nav {
     background-color: #4e64d4;
 }
 
+
+/* FOOTER */
 footer {
     background-color: #050a24;
     color: #ffff;
     gap: 15px;
     position: relative;
+    border-bottom: 2px solid #1d223d;
 }
-
 
 footer {
     background-color: #050a24;
@@ -97,13 +151,7 @@ footer p {
     align-items: center;
 }
 
-.ubicacion {
-    /* margin-top: 50px; */
-    margin-right: 20px;
-}
-
 .informacion {
-    /* margin-top: 50px; */
     margin-left: 25px;
 }
 
@@ -118,10 +166,4 @@ footer p {
 
 .copyrigt {
     background-color: #050a24;
-
 }
-
-/*
-.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred{
-    height: 700px;
-}*/

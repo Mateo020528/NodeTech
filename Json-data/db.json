@@ -63,6 +63,26 @@
       "estudios": "Técnico",
       "email": "aadd@gmail.com",
       "confirmar": "hola1234"
+    },
+    {
+      "id": "0aef",
+      "name": "Ana",
+      "last_name": "Henao",
+      "edad": "21",
+      "genero": "Femenino",
+      "estudios": "Técnico",
+      "email": "ana@gmail.com",
+      "confirmar": "contraseña"
+    },
+    {
+      "id": "fe85",
+      "name": "Ana",
+      "last_name": "Henao",
+      "edad": "21",
+      "genero": "Femenino",
+      "estudios": "Técnico",
+      "email": "ana@gmail.com",
+      "confirmar": "123456"
     }
   ],
   "articles": [

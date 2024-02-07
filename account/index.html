@@ -53,9 +53,11 @@
               <a class="nav-link active text-light" aria-current="page" href="../apis/index.html">JAVASCRIPT</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex align-items-center" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">Search</button>
+            <div id="crear-articulo" class="btn btn-secondary ms-2"><a href="../crear-articulo/index.html">Crear</a></div>
+            <div id="Cerrar-sesion" class="btn btn-secondary ms-2 d-flex align-items-center "><a>Cerrar Sesión</a></div>
           </form>
         </div>
       </div>
@@ -94,16 +96,18 @@
       <div class="Derecha">
         <h2>Artículos Recomendados</h2>
         <div class="parrafo1 mb-3">
-          <img src="../assets/Bucles.jpg" class="imagen" width="400px" />
-          <div class="texto1">
-            <h3>Bucles o Ciclos en Javascript</h3>
-            <p>
-              En JavaScript los bucles (loops) son utilizados para realizar tareas repetitivas con base en una
-              condición. Las condiciones típicamente devuelven true (verdadero) o false(falso) al ser evaluados. El
-              bucle continuará ejecutándose hasta que la condición devuelva false.
-            </p>
-            <button class="btn btn-warning">Editar</button>
-            <button class="btn btn-warning">Eliminar</button>
+          <div class="ciclos">
+            <img src="../assets/Bucles.jpg" class="imagen" width="400px" />
+            <div class="texto1">
+                <h3>Bucles o Ciclos en Javascript</h3>
+                <p>
+                En JavaScript los bucles (loops) son utilizados para realizar tareas repetitivas con base en una
+                condición. Las condiciones típicamente devuelven true (verdadero) o false(falso) al ser evaluados. El
+                bucle continuará ejecutándose hasta que la condición devuelva false.
+                </p>
+                <button id="editar-ciclos" class="btn btn-warning">Editar</button>
+                <button id="eliminar-ciclos" class="btn btn-warning">Eliminar</button> 
+            </div>
           </div>
         </div>
         <div class="parrafo2">
@@ -114,8 +118,8 @@
               El condicional if…else se usa para ejecutar un bloque de código si la condición es verdadera u otro bloque
               de código si la condición falsa.
             </p>
-            <button class="btn btn-warning">Editar</button>
-            <button class="btn btn-warning">Eliminar</button>
+            <button id="editar-condicional" class="btn btn-warning">Editar</button>
+            <button id="eliminar-condicional" class="btn btn-warning">Eliminar</button>
           </div>
         </div>
       </div>
