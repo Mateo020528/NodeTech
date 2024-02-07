@@ -5,32 +5,42 @@ const editarCondicional = document.getElementById("editar-condicional"); //boton
 const eliminarCnal = document.querySelector("#eliminar-condicional") //Llamamos al boton eliminar condicional
 
 
+
 cerrar.addEventListener("click", cerrarSesion);
 function cerrarSesion(){
     window.location.href = "../login/index.html";
     
 }
-
+//Eliminar Ciclos
 eliminar.addEventListener("click",eliminarCiclos);
-const ciclos = document.querySelector(".parrafo1")//llamamos la clase de la carta completa 
+const ciclos = document.querySelector(".parrafo1")//Nombre de la carta a eliminar 
 function eliminarCiclos(){
     if(eliminar){
-        alert("Quieres eliminar el artículo?")
-        ciclos.parentNode.removeChild(ciclos); // eliminamos la carta completa
+        let resultado = window.confirm("Seguro que quiere eliminar el artículo");
+        if(resultado === true){
+           ciclos.parentNode.removeChild(ciclos); // eliminamos la carta completa
+        }else{
+        alert("El artículo no se elimino");
+        }
+    }else{
+        alert("el artículo no se elimino")
     }
 }
 
-// editar.addEventListener("click",editarCiclos);
-// const editar = document.getElementById("editar-ciclos"); // Llamamos el boton de editar
-// function editarCiclos(){
-    
-// }
 
+//Eliminar condicional 
 eliminarCnal.addEventListener("click",eliminarCondicional);
-const condicionales = document.querySelector(".parrafo2");
+const condicionales = document.querySelector(".parrafo2"); //Nombre de la carta a eliminar
 function eliminarCondicional (){
     if(eliminarCnal){
-        alert("Quieres eliminar este atículo?")
-        condicionales.parentNode.removeChild(condicionales); //eliminamos la carta de condicionales
+        let resultado = window.confirm("Seguro que quiere eliminar el artículo")
+        if(resultado === true){
+            alert("Se eliminara el artículo")
+            condicionales.parentNode.removeChild(condicionales); //eliminamos la carta de condicionales
+        }else{
+            alert("el artículo no se elimino")
+        }
+    }else{
+        alert("El articulo no se elimino")
     }
 }

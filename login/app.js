@@ -23,6 +23,8 @@ function verificarLogin(){
                 sessionStorage.setItem("nombre",element.email)
             }else{
                 alert("El usuario no existe. por favor ingrese un correo valido")
-            };
+            }
+               
+             
         });
     }
