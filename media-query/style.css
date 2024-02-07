@@ -15,17 +15,41 @@ h1{
     text-align: center;
 }
 
-h2{
+h2,h3{
     font-family: 'Merriweather', serif;
     text-decoration: underline;
 }
 
 p{
     font-family: serif;
+    text-align: justify;
+}
+/*MAIN*/
+.main {
+  display: flex;
+  justify-content: space-around;
+  width: 95vw;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-aside{
-    float: left;
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside {
+  justify-content: center;
+  width: 25vw;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 50px;
+}
+
+
+.container.d-flex.justify-content-center{
+  padding: 90px;
 }
 
 /* COLOR PALETTE  */
@@ -72,6 +96,7 @@ nav{
 
 h2,h3{
     color: #0629DD;
+    text-align: center;
 }
 
 .logo_img{
@@ -127,6 +152,59 @@ a:hover{
     background-color: #050a24;
     
 }
+
+/*quiz*/ 
+
+
+#quiz {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #question {
+    margin-bottom: 20px;
+    font-family: serif
+  }
+  
+  #options {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    margin-bottom: 20px;
+  }
+  
+  #options button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: left;
+    font-family: serif
+  }
+  
+  #submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: serif;
+  }
+  
+  #submit:hover {
+    background-color: #0056b3;
+  }
+
+
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
     .articles-img img {
