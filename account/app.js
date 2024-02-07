@@ -4,8 +4,6 @@ const eliminar = document.getElementById("eliminar-ciclos") //Llamamos el boton 
 const editarCondicional = document.getElementById("editar-condicional"); //boton editar de la carta de condicionales
 const eliminarCnal = document.querySelector("#eliminar-condicional") //Llamamos al boton eliminar condicional
 
-
-
 cerrar.addEventListener("click", cerrarSesion);
 function cerrarSesion(){
     window.location.href = "../login/index.html";
