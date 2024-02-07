@@ -24,6 +24,7 @@ p{
   font-family: serif;
   text-align: justify;
 }
+
 /*MAIN*/
 .main {
 display: flex;
@@ -47,11 +48,9 @@ margin-top: 30px;
 padding: 50px;
 }
 
-
 .container.d-flex.justify-content-center{
 padding: 90px;
 }
-
 
 /* COLOR PALETTE  */
 :root {
@@ -94,6 +93,80 @@ nav {
   gap: 20px;
 }
 
+/* IMAGES WITH HOVER */
+
+/* SERVER */
+.servidor{
+  position: relative;
+  color: black;
+}
+
+.servidor img{
+  position: absolute;
+  width: 300px;
+  bottom: 20px;
+  left: -50px;
+  border-radius: 20px;
+  display: none;
+}
+
+.servidor:hover img{
+  position: absolute;
+  width: 300px;
+  bottom: 20px;
+  left: -50px;
+  border-radius: 20px;
+  display: block;
+}
+
+/* CLIENT */
+.cliente{
+  position: relative;
+  color: black;
+}
+
+.cliente img{
+  position: absolute;
+  width: 300px;
+  bottom: 20px;
+  left: -50px;
+  border-radius: 20px;
+  display: none;
+}
+
+.cliente:hover img{
+  position: absolute;
+  width: 200px;
+  bottom: 20px;
+  left: -50px;
+  border-radius: 20px;
+  display: block;
+}
+
+/* API REST */
+.api-rest{
+  position: relative;
+  color: black;
+}
+
+.api-rest img{
+  position: absolute;
+  width: 300px;
+  bottom: 20px;
+  left: -50px;
+  border-radius: 20px;
+  display: none;
+}
+
+.api-rest:hover img{
+  position: absolute;
+  width: 400px;
+  bottom: 20px;
+  left: -50px;
+  border-radius: 20px;
+  display: block;
+}
+
 .container-fluid {
   background-color: var(--titulos);
   color: #fff;
@@ -101,6 +174,28 @@ nav {
 
 .header {
   background-color: var(--titulos);
+}
+
+/* MAIN */
+.aside{
+  width: 340px;
+}
+
+.aside h3{
+  text-align: center;
+}
+
+.aside a{
+  color: black;
+}
+
+.advertisement{
+  margin-bottom: 30px;
+
+}
+
+.section{
+  width: 90%;
 }
 
 a {
@@ -229,6 +324,12 @@ h1 {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 990px) {
+  .aside{
+    display: none;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 700px) {
   .mision {
     display: none;
@@ -248,5 +349,8 @@ h1 {
   }
   .info {
     margin-left: 0px;
+  }
+  .aside{
+    display: none;
   }
 }

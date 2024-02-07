@@ -16,14 +16,13 @@ function verificarLogin(){
         let userFind = data.find(element => element.email === email.value && element.password === password.value);
         console.log(userFind);
         //La variable userfind lo que hace es mirar si el usuario  es encontrado en la base de datos
-                console.log(email.value, password.value)
-                if(userFind){
-                    //y si existe el usuario me permita entrar a la pagina de la cuenta
-                     window.location.href = ".././account/index.html";
-                    sessionStorage.setItem("nombre",element.email)
-                }else{
-                    alert("El usuario no existe. por favor ingrese un correo valido")
-                };
-             
+            console.log(email.value, password.value)
+            if(userFind){
+                //y si existe el usuario me permita entrar a la pagina de la cuenta
+                window.location.href = ".././account/index.html";
+                sessionStorage.setItem("nombre",element.email)
+            }else{
+                alert("El usuario no existe. por favor ingrese un correo valido")
+            };
         });
     }

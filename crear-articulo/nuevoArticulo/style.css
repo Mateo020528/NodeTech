@@ -1,0 +1,169 @@
+/* IMPORT FONTS OF GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+/* STANDARIZATE THE CODE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS FOR TITLES*/
+h1 {
+    font-family: "Protest Riot", sans-serif;
+}
+
+p {
+    font-family: serif;
+}
+
+/* COLOR PALETTE  */
+:root {
+    --titulos: #050a24;
+    --cards: rgba(151, 119, 98, 0.075);
+}
+
+/* HEADER */
+nav {
+    justify-content: center;
+    background-color: var(--titulos);
+}
+
+.flags img {
+    cursor: pointer;
+    width: 50px;
+}
+
+.container-fluid {
+    background-color: var(--titulos);
+    color: #fff;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0rem;
+}
+
+.padre {
+    justify-content: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar-content {
+    width: 98vw !important;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.search {
+    width: 25%;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+}
+
+.btnArticulos {
+    padding: 5px 10px;
+    background-color: #050a24;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.btnArticulos:hover {
+    font-weight: bold;
+    background-color: #4e64d4;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #050a24;
+    color: #ffff;
+    gap: 15px;
+    position: relative;
+    border-bottom: 2px solid #1d223d;
+}
+
+footer {
+    background-color: #050a24;
+    color: #ffff;
+    gap: 15px;
+    position: relative;
+}
+
+footer p {
+    max-width: 400px;
+}
+
+.logo_img {
+    margin: -20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.contenido {
+    width: 70dvw;
+    margin-top: 20px;
+}
+
+.contenido2 {
+    width: 70dvw;
+    margin-top: 20px;
+}
+
+.contenido .botonVer {
+    display: flex;
+    top: 0;
+    left: 0;
+    margin-left: 917px;
+}
+
+.contenido .botonPublicar {
+    display: flex;
+    top: 0;
+    left: 0;
+    margin-left: 885px;
+}
+
+.acerca {
+    margin-top: 30px;
+}
+
+.suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion {
+    margin-left: 25px;
+}
+
+.footer-content {
+    width: 90dvw;
+}
+
+.linea {
+    background-color: #050a24;
+    color: #E4E4E7;
+}
+
+.copyrigt {
+    background-color: #050a24;
+}
