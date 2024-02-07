@@ -2,7 +2,7 @@ const search = document.getElementById("search");
 const titles = document.querySelectorAll(".articles-text-title");
 const articles = document.querySelectorAll(".art");
 
-search.addEventListener("input", ()=>{
+search.addEventListener("keyup", ()=>{
     for(title of titles){
         const texto=title.innerHTML.toLowerCase();
         if (texto.startsWith(search.value.toLowerCase())){
