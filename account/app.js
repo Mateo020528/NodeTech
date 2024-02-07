@@ -1,5 +1,5 @@
-const correo = sessionStorage.getItem("nombre");
-const nombre = sesionStorage.getItem("nombre")
+const correo = sessionStorage.getItem("nombre"); //sesionStorage del login
+const nombre = sesionStorage.getItem("nombre");// sesionStorage del crear cuenta
 const cerrar = document.getElementById("cerrar");
 
 
