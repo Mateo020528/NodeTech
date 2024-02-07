@@ -1,3 +1,4 @@
+
 ClassicEditor
 .create(document.querySelector('#txtDescripcion'))
 .catch(error => {

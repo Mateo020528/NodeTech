@@ -12,9 +12,9 @@ const registrar = document.getElementById("registro"); //Llamamos el boton de re
 
 registrar.addEventListener("click", verificarRegistro);
 console.log(terminos)
-function verificarRegistro(event) { //se cambio el  nombre de la función y funciona bien
+function verificarRegistro(event) { // la funcion como su nombre lo indica verifica si la persona si cumple con los requerimientos para entrar
     event.preventDefault()
-    let users = {
+    let users = {  //creo una variable users en donde se guardaron los datos que ingresen los usuarios.
         name: nombre.value,
         last_name: last_name.value,
         edad: edad.value,
@@ -27,28 +27,22 @@ function verificarRegistro(event) { //se cambio el  nombre de la función y func
     if(nombre.value != "" && last_name.value != "" && edad.value != "" && genero.value != "" && estudios.value != "" && email.value != "" && password.value != "" && confirmar.value != ""  && terminos.checked){
         if(password.value === confirmar.value){
             if(users){
-                // window.location.href = "" //Aqui va la página que nos va a brindar angelica
                 fetch(url, {
-                    method: 'POST',
+                    method: 'POST', //  si users existe que me actualize la base de datos
                     headers: {
                         "Content-Type": "application/json"
                     },     
                     body: JSON.stringify(users) 
                 })
-                sessionStorage.getItem("nombre",nombre.value); // sessionStorage (necesitamos la página de angelica para anclarlo a esa página)
+                sessionStorage.setItem("nombre",nombre.value); // sessionStorage (usamos el setItem con el nombre del usuario)
+                window.location.href = "../account.index.html" //vinculado a la página de cuenta
             } else{
                 alert("Revisa tus datos, hay algo que ingresaste mal")
             };
         }else{
             alert("Por favor revisa ambas contraseñas una de ellas no coincide")
         }
-      
     }else{
         alert("Por favor llene todos los campos para continuar");
     }
 }
-
-//para mañana terminar lógica del registro, me falta:
-//2)no permiter a personas que no ingresen con el correo incompleto. sacar alerta para ese caso,
-//6)Mirar como hacer la pagina responsive.. no se me puede olvidar
-
