@@ -1,75 +1,75 @@
 //Se crea un objeto que contiene la pregunta, las opciones de respuesta y la respuesta correcta
-const questions = [
+const preguntas = [
     {
-        question: "¿Qué significan las APIS en el contexto del diseño web?",
-        options: ["a) Aplicación de Interfaz de Software", "b) Interfaz de Programación de Aplicaciones", "c) Protocolo de Conexión de Servidores"],
-        answer: "b"
+        pregunta: "¿Qué significan las APIS en el contexto del diseño web?",
+        opciones: ["a) Aplicación de Interfaz de Software", "b) Interfaz de Programación de Aplicaciones", "c) Protocolo de Conexión de Servidores"],
+        respuesta: "b"
         },
         {
-        question: "¿Cómo funcionan las APIS en términos de arquitectura cliente-servidor?",
-        options: ["a) El servidor envía solicitudes y el cliente responde.", "b) El cliente envía solicitudes y el servidor responde.", "c) Ambos intercambian solicitudes y respuestas de manera simultánea."],
-        answer: "b"
+        pregunta: "¿Cómo funcionan las APIS en términos de arquitectura cliente-servidor?",
+        opciones: ["a) El servidor envía solicitudes y el cliente responde.", "b) El cliente envía solicitudes y el servidor responde.", "c) Ambos intercambian solicitudes y respuestas de manera simultánea."],
+        respuesta: "b"
         },
         {
-        question: "¿Cuál es una característica de las API de SOAP?",
-        options: ["a) Utilizan el protocolo de WebSocket.", "b) Intercambian mensajes mediante JSON.", "c) Utilizan XML para el intercambio de mensajes."],
-        answer: "c"
+        pregunta: "¿Cuál es una característica de las API de SOAP?",
+        opciones: ["a) Utilizan el protocolo de WebSocket.", "b) Intercambian mensajes mediante JSON.", "c) Utilizan XML para el intercambio de mensajes."],
+        respuesta: "c"
         },
         {
-        question: "¿Qué tipo de API permite la comunicación bidireccional entre cliente y servidor?",
-        options: ["a) API de RPC", "b) API de WebSocket", "c) API de REST"],
-        answer: "b"
+        pregunta: "¿Qué tipo de API permite la comunicación bidireccional entre cliente y servidor?",
+        opciones: ["a) API de RPC", "b) API de WebSocket", "c) API de REST"],
+        respuesta: "b"
         },
         {
-        question: "¿Cuál es el tipo de API más popular y flexible en la web actualmente?",
-        options: ["a) API de RPC", "b) API de SOAP", "c) API de REST"],
-        answer: "c"
+        pregunta: "¿Cuál es el tipo de API más popular y flexible en la web actualmente?",
+        opciones: ["a) API de RPC", "b) API de SOAP", "c) API de REST"],
+        respuesta: "c"
         }
     ];
     
     //Se llaman todas las clases de los elementos que necesitamos del HTML para hacer funcional el cuestionario
     const quizContainer = document.getElementById('quiz');
-    const questionContainer = document.getElementById('question');
-    const optionsContainer = document.getElementById('options');
-    const submitButton = document.getElementById('submit');
+    const preguntaContainer = document.getElementById('pregunta');
+    const opcionesContainer = document.getElementById('opciones');
+    const enviarButton = document.getElementById('enviar');
     
     //Se crean variables para las preguntas y las respuestas correctas (puntaje)
-    let currentQuestion = 0;
-    let score = 0;
+    let numPreguntas = 0;
+    let puntaje = 0;
     //Esta funcion recorre el objeto de preguntas y crea botones por cada opcion de respuesta
-    function showQuestion() {
-        const q = questions[currentQuestion];
-        questionContainer.textContent = q.question;
-        optionsContainer.innerHTML = '';
-        q.options.forEach(option => {
+    function mostrarPregunta() {
+        const preg = preguntas[numPreguntas];
+        preguntaContainer.textContent = preg.pregunta;
+        opcionesContainer.innerHTML = '';
+        preg.opciones.forEach(opcion => {
         const button = document.createElement('button');
-        button.textContent = option;
+        button.textContent = opcion;
         button.addEventListener('click', () => {
-            checkAnswer(option[0]);
+            verRespuesta(opcion[0]);
         });
-        optionsContainer.appendChild(button);
+        opcionesContainer.appendChild(button);
         });
     }
     //Esta funcion se encarga de comparar la respuesta seleccionada con la respuesta correcta, si son iguales sube el puntaje, si la pregunta es menor a 5 pasa de pregunta si no muestra el puntaje obtenido
-    function checkAnswer(answer) {
-        if (answer === questions[currentQuestion].answer) {
-        score++;
+    function verRespuesta(respuesta) {
+        if (respuesta === preguntas[numPreguntas].respuesta) {
+        puntaje++;
         }
-        currentQuestion++;
-        if (currentQuestion < questions.length) {
-        showQuestion();
+        numPreguntas++;
+        if (numPreguntas < preguntas.length) {
+        mostrarPregunta();
         } else {
-        showResult();
+        mostrarResultado();
         }
     }
     //Esta funcion muestra el puntaje obtenido
-    function showResult() {
+    function mostrarResultado() {
         quizContainer.innerHTML = `
         <h1>Resultado</h1>
-        <p>Has respondido correctamente ${score} de ${questions.length} preguntas.</p>
+        <p>Has respondido correctamente ${puntaje} de ${preguntas.length} preguntas.</p>
         `;
     }
     
     //Es lo que aparece al principio ( la primera pregunta) y llama la funcion del puntaje al darle clic al boton enviar
-    showQuestion();
-    submitButton.addEventListener('click', showResult);
+    mostrarPregunta();
+    submitButton.addEventListener('click', mostrarResultado);

@@ -219,19 +219,19 @@ a:hover{
     margin-bottom: 20px;
   }
   
-  #question {
+  #pregunta {
     margin-bottom: 20px;
     font-family: serif
   }
   
-  #options {
+  #opciones {
     display: flex;
     flex-direction: column;
     align-items:baseline;
     margin-bottom: 20px;
   }
   
-  #options button {
+  #opciones button {
     margin: 10px 0;
     padding: 10px 20px;
     cursor: pointer;
@@ -239,7 +239,7 @@ a:hover{
     font-family: serif
   }
   
-  #submit {
+  #enviar {
     background-color: #007bff;
     color: white;
     border: none;
@@ -250,7 +250,7 @@ a:hover{
     font-family: serif;
   }
   
-  #submit:hover {
+  #enviar:hover {
     background-color: #0056b3;
   }
 

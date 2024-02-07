@@ -1,75 +1,75 @@
 //Se crea un objeto que contiene la pregunta, las opciones de respuesta y la respuesta correcta
-const questions = [
+const preguntas = [
     {
-        question: "¿Qué es una Media Query?",
-        options: ["a)  Una regla o conjunto de reglas en HTML.", "b) Una función de CSS3 para definir propiedades específicas para distintos tipos de medios.", "c) Una forma de manipular bases de datos en JavaScript."],
-        answer: "b"
+        pregunta: "¿Qué es una Media Query?",
+        opciones: ["a)  Una regla o conjunto de reglas en HTML.", "b) Una función de CSS3 para definir propiedades específicas para distintos tipos de medios.", "c) Una forma de manipular bases de datos en JavaScript."],
+        respuesta: "b"
         },
         {
-        question: "¿Cómo se utilizan las Media Queries?",
-        options: ["a) Es un estándar de diseño solo recomendado por algunos navegadores.", "b) Se introducen en una hoja de estilo HTML.", "c) Se introducen en una hoja de estilo CSS y permiten especificar la visualización de un documento para diferentes medios de salida y tamaños de pantalla."],
-        answer: "c"
+        pregunta: "¿Cómo se utilizan las Media Queries?",
+        opciones: ["a) Es un estándar de diseño solo recomendado por algunos navegadores.", "b) Se introducen en una hoja de estilo HTML.", "c) Se introducen en una hoja de estilo CSS y permiten especificar la visualización de un documento para diferentes medios de salida y tamaños de pantalla."],
+        respuesta: "c"
         },
         {
-        question: "¿Para qué sirven las Media Queries?",
-        options: ["a) Para generar animaciones en páginas web.", "b) Para crear una experiencia de uso adecuada para cada dispositivo, ajustando la visualización en función de determinadas condiciones como el tipo de medio, la orientación de la pantalla o su resolución.", "c) Para codificar aplicaciones móviles."],
-        answer: "b"
+        pregunta: "¿Para qué sirven las Media Queries?",
+        opciones: ["a) Para generar animaciones en páginas web.", "b) Para crear una experiencia de uso adecuada para cada dispositivo, ajustando la visualización en función de determinadas condiciones como el tipo de medio, la orientación de la pantalla o su resolución.", "c) Para codificar aplicaciones móviles."],
+        respuesta: "b"
         },
         {
-        question: "¿Cómo funcionan las Media Queries CSS?",
-        options: ["a) Están conformadas por un tipo de medio obligatorio y una o más expresiones conocidas como características de medios.", "b) No es necesario especificar ningún tipo de medio en las Media Queries.", "c) Las Media Queries CSS se definen únicamente con JavaScript."],
-        answer: "a"
+        pregunta: "¿Cómo funcionan las Media Queries CSS?",
+        opciones: ["a) Están conformadas por un tipo de medio obligatorio y una o más expresiones conocidas como características de medios.", "b) No es necesario especificar ningún tipo de medio en las Media Queries.", "c) Las Media Queries CSS se definen únicamente con JavaScript."],
+        respuesta: "a"
         },
         {
-        question: "¿Cuál es el valor por defecto para un tipo de medio si no se especifica en una Media Query?",
-        options: ["a) all", "b) none", "c) default"],
-        answer: "a"
+        pregunta: "¿Cuál es el valor por defecto para un tipo de medio si no se especifica en una Media Query?",
+        opciones: ["a) all", "b) none", "c) default"],
+        respuesta: "a"
         }
     ];
     
     //Se llaman todas las clases de los elementos que necesitamos del HTML para hacer funcional el cuestionario
     const quizContainer = document.getElementById('quiz');
-    const questionContainer = document.getElementById('question');
-    const optionsContainer = document.getElementById('options');
-    const submitButton = document.getElementById('submit');
+    const preguntaContainer = document.getElementById('pregunta');
+    const opcionesContainer = document.getElementById('opciones');
+    const enviarButton = document.getElementById('enviar');
     
     //Se crean variables para las preguntas y las respuestas correctas (puntaje)
-    let currentQuestion = 0;
-    let score = 0;
+    let numPreguntas = 0;
+    let puntaje = 0;
     //Esta funcion recorre el objeto de preguntas y crea botones por cada opcion de respuesta
-    function showQuestion() {
-        const q = questions[currentQuestion];
-        questionContainer.textContent = q.question;
-        optionsContainer.innerHTML = '';
-        q.options.forEach(option => {
+    function mostrarPregunta() {
+        const preg = preguntas[numPreguntas];
+        preguntaContainer.textContent = preg.pregunta;
+        opcionesContainer.innerHTML = '';
+        preg.opciones.forEach(opcion => {
         const button = document.createElement('button');
-        button.textContent = option;
+        button.textContent = opcion;
         button.addEventListener('click', () => {
-            checkAnswer(option[0]);
+            verRespuesta(opcion[0]);
         });
-        optionsContainer.appendChild(button);
+        opcionesContainer.appendChild(button);
         });
     }
     //Esta funcion se encarga de comparar la respuesta seleccionada con la respuesta correcta, si son iguales sube el puntaje, si la pregunta es menor a 5 pasa de pregunta si no muestra el puntaje obtenido
-    function checkAnswer(answer) {
-        if (answer === questions[currentQuestion].answer) {
-        score++;
+    function verRespuesta(respuesta) {
+        if (respuesta === preguntas[numPreguntas].respuesta) {
+        puntaje++;
         }
-        currentQuestion++;
-        if (currentQuestion < questions.length) {
-        showQuestion();
+        numPreguntas++;
+        if (numPreguntas < preguntas.length) {
+        mostrarPregunta();
         } else {
-        showResult();
+        mostrarResultado();
         }
     }
     //Esta funcion muestra el puntaje obtenido
-    function showResult() {
+    function mostrarResultado() {
         quizContainer.innerHTML = `
         <h1>Resultado</h1>
-        <p>Has respondido correctamente ${score} de ${questions.length} preguntas.</p>
+        <p>Has respondido correctamente ${puntaje} de ${preguntas.length} preguntas.</p>
         `;
     }
     
     //Es lo que aparece al principio ( la primera pregunta) y llama la funcion del puntaje al darle clic al boton enviar
-    showQuestion();
-    submitButton.addEventListener('click', showResult);
+    mostrarPregunta();
+    submitButton.addEventListener('click', mostrarResultado);
