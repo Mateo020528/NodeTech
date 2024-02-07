@@ -1,28 +1,28 @@
 const questions = [
     {
-        question: "¿Qué es una Media Query?",
-        options: ["a)  Una regla o conjunto de reglas en HTML.", "b) Una función de CSS3 para definir propiedades específicas para distintos tipos de medios.", "c) Una forma de manipular bases de datos en JavaScript."],
+        question: "¿Qué significan las APIS en el contexto del diseño web?",
+        options: ["a) Aplicación de Interfaz de Software", "b) Interfaz de Programación de Aplicaciones", "c) Protocolo de Conexión de Servidores"],
         answer: "b"
         },
         {
-        question: "¿Cómo se utilizan las Media Queries?",
-        options: ["a) Es un estándar de diseño solo recomendado por algunos navegadores.", "b) Se introducen en una hoja de estilo HTML.", "c) Se introducen en una hoja de estilo CSS y permiten especificar la visualización de un documento para diferentes medios de salida y tamaños de pantalla."],
+        question: "¿Cómo funcionan las APIS en términos de arquitectura cliente-servidor?",
+        options: ["a) El servidor envía solicitudes y el cliente responde.", "b) El cliente envía solicitudes y el servidor responde.", "c) Ambos intercambian solicitudes y respuestas de manera simultánea."],
+        answer: "b"
+        },
+        {
+        question: "¿Cuál es una característica de las API de SOAP?",
+        options: ["a) Utilizan el protocolo de WebSocket.", "b) Intercambian mensajes mediante JSON.", "c) Utilizan XML para el intercambio de mensajes."],
         answer: "c"
         },
         {
-        question: "¿Para qué sirven las Media Queries?",
-        options: ["a) Para generar animaciones en páginas web.", "b) Para crear una experiencia de uso adecuada para cada dispositivo, ajustando la visualización en función de determinadas condiciones como el tipo de medio, la orientación de la pantalla o su resolución.", "c) Para codificar aplicaciones móviles."],
+        question: "¿Qué tipo de API permite la comunicación bidireccional entre cliente y servidor?",
+        options: ["a) API de RPC", "b) API de WebSocket", "c) API de REST"],
         answer: "b"
         },
         {
-        question: "¿Cómo funcionan las Media Queries CSS?",
-        options: ["a) Están conformadas por un tipo de medio obligatorio y una o más expresiones conocidas como características de medios.", "b) No es necesario especificar ningún tipo de medio en las Media Queries.", "c) Las Media Queries CSS se definen únicamente con JavaScript."],
-        answer: "a"
-        },
-        {
-        question: "¿Cuál es el valor por defecto para un tipo de medio si no se especifica en una Media Query?",
-        options: ["a) all", "b) none", "c) default"],
-        answer: "a"
+        question: "¿Cuál es el tipo de API más popular y flexible en la web actualmente?",
+        options: ["a) API de RPC", "b) API de SOAP", "c) API de REST"],
+        answer: "c"
         }
     ];
     
